@@ -1,0 +1,350 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:model-metadata",
+  "title": "Public architecture and frozen aggregate preprocessor metadata v0.1.0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "architecture",
+    "seed",
+    "hidden_dims",
+    "preprocessor",
+    "feature_schema_hash",
+    "model_schema_hash",
+    "metadata_digest"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "architecture": {
+      "const": "tabular-mlp-v1"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "hidden_dims": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "preprocessor": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "fit_scope",
+        "fit_rows",
+        "numeric",
+        "categorical",
+        "feature_order",
+        "target"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "0.1.0"
+        },
+        "fit_scope": {
+          "const": "training_only"
+        },
+        "fit_rows": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "numeric": {
+          "type": "object",
+          "required": [
+            "time_in_hospital",
+            "num_lab_procedures",
+            "num_procedures",
+            "num_medications",
+            "number_outpatient",
+            "number_emergency",
+            "number_inpatient",
+            "number_diagnoses"
+          ],
+          "properties": {
+            "time_in_hospital": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/numeric"
+            },
+            "num_lab_procedures": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/numeric"
+            },
+            "num_procedures": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/numeric"
+            },
+            "num_medications": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/numeric"
+            },
+            "number_outpatient": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/numeric"
+            },
+            "number_emergency": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/numeric"
+            },
+            "number_inpatient": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/numeric"
+            },
+            "number_diagnoses": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/numeric"
+            }
+          },
+          "additionalProperties": false
+        },
+        "categorical": {
+          "type": "object",
+          "required": [
+            "race",
+            "gender",
+            "age",
+            "admission_type_id",
+            "admission_source_id",
+            "max_glu_serum",
+            "A1Cresult",
+            "metformin",
+            "repaglinide",
+            "nateglinide",
+            "chlorpropamide",
+            "glimepiride",
+            "acetohexamide",
+            "glipizide",
+            "glyburide",
+            "tolbutamide",
+            "pioglitazone",
+            "rosiglitazone",
+            "acarbose",
+            "miglitol",
+            "troglitazone",
+            "tolazamide",
+            "examide",
+            "citoglipton",
+            "insulin",
+            "glyburide-metformin",
+            "glipizide-metformin",
+            "glimepiride-pioglitazone",
+            "metformin-rosiglitazone",
+            "metformin-pioglitazone",
+            "change",
+            "diabetesMed"
+          ],
+          "properties": {
+            "race": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "gender": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "age": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "admission_type_id": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "admission_source_id": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "max_glu_serum": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "A1Cresult": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "metformin": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "repaglinide": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "nateglinide": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "chlorpropamide": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "glimepiride": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "acetohexamide": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "glipizide": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "glyburide": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "tolbutamide": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "pioglitazone": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "rosiglitazone": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "acarbose": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "miglitol": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "troglitazone": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "tolazamide": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "examide": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "citoglipton": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "insulin": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "glyburide-metformin": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "glipizide-metformin": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "glimepiride-pioglitazone": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "metformin-rosiglitazone": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "metformin-pioglitazone": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "change": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            },
+            "diabetesMed": {
+              "$ref": "urn:pcfl:0.1.0:model-metadata#/$defs/categorical"
+            }
+          },
+          "additionalProperties": false
+        },
+        "feature_order": {
+          "const": [
+            "time_in_hospital",
+            "num_lab_procedures",
+            "num_procedures",
+            "num_medications",
+            "number_outpatient",
+            "number_emergency",
+            "number_inpatient",
+            "number_diagnoses",
+            "race",
+            "gender",
+            "age",
+            "admission_type_id",
+            "admission_source_id",
+            "max_glu_serum",
+            "A1Cresult",
+            "metformin",
+            "repaglinide",
+            "nateglinide",
+            "chlorpropamide",
+            "glimepiride",
+            "acetohexamide",
+            "glipizide",
+            "glyburide",
+            "tolbutamide",
+            "pioglitazone",
+            "rosiglitazone",
+            "acarbose",
+            "miglitol",
+            "troglitazone",
+            "tolazamide",
+            "examide",
+            "citoglipton",
+            "insulin",
+            "glyburide-metformin",
+            "glipizide-metformin",
+            "glimepiride-pioglitazone",
+            "metformin-rosiglitazone",
+            "metformin-pioglitazone",
+            "change",
+            "diabetesMed"
+          ]
+        },
+        "target": {
+          "const": "y"
+        }
+      },
+      "additionalProperties": false
+    },
+    "feature_schema_hash": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/hash"
+    },
+    "model_schema_hash": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/hash"
+    },
+    "metadata_digest": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/hash"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "numeric": {
+      "type": "object",
+      "required": [
+        "median",
+        "mean",
+        "scale"
+      ],
+      "properties": {
+        "median": {
+          "type": "number"
+        },
+        "mean": {
+          "type": "number"
+        },
+        "scale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "missing_training_rows": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "categorical": {
+      "type": "object",
+      "required": [
+        "missing_code",
+        "unknown_code",
+        "vocabulary"
+      ],
+      "properties": {
+        "missing_code": {
+          "const": 0
+        },
+        "unknown_code": {
+          "const": 1
+        },
+        "vocabulary": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 2
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$comment": "Matches evaluation.build_model_metadata; no source paths or records are exported. Contiguous vocabulary codes, missing-row counts <= fit_rows, exact architecture/schema reconstruction and metadata_digest binding require create_model_from_metadata semantic validation."
+}

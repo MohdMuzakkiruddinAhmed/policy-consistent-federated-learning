@@ -1,0 +1,1 @@
+attempt_id,run_id,cell_id,family,baseline_id,variant,distribution,scenario_id,seed,status,reason_code,eligible_clean_cell,evaluation_split,eligible_clinical_cell,final_holdout_authorized,data_kind,metrics,evidence_sha256,exclusion_reasons

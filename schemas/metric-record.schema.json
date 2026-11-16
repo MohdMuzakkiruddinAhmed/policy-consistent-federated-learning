@@ -1,0 +1,659 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:metric-record",
+  "title": "Independent runtime-verification summary v0.1.0",
+  "type": "object",
+  "required": [
+    "successful",
+    "baseline_id",
+    "scenario_id",
+    "unique_presented_updates",
+    "oracle_invalid_presented",
+    "oracle_invalid_incorporations",
+    "oracle_valid_rejections",
+    "accepted_updates",
+    "final_decisions",
+    "published_models",
+    "audit_verified",
+    "model_reconstruction_verified",
+    "persistent_protocol_verified",
+    "committed_evaluation_response_verified",
+    "model_digests",
+    "validation_metrics",
+    "is_confirmatory",
+    "assigned_tasks",
+    "acknowledged_tasks",
+    "final_update_decisions",
+    "final_operational_errors",
+    "indeterminate_tasks",
+    "audited_final_decisions",
+    "audit_complete_decisions"
+  ],
+  "properties": {
+    "successful": {
+      "const": true
+    },
+    "baseline_id": {
+      "enum": [
+        "B1",
+        "B2",
+        "B3",
+        "P1"
+      ]
+    },
+    "scenario_id": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "unique_presented_updates": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "oracle_invalid_presented": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "oracle_invalid_incorporations": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "oracle_valid_rejections": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "accepted_updates": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "final_decisions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "published_models": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "audit_verified": {
+      "type": "boolean"
+    },
+    "model_reconstruction_verified": {
+      "type": "boolean"
+    },
+    "persistent_protocol_verified": {
+      "type": "boolean"
+    },
+    "committed_evaluation_response_verified": {
+      "type": "boolean"
+    },
+    "model_digests": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "validation_metrics": {
+      "anyOf": [
+        {
+          "$ref": "urn:pcfl:0.1.0:aggregate-metrics"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "is_confirmatory": {
+      "const": false
+    },
+    "assigned_tasks": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "acknowledged_tasks": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "final_update_decisions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "final_operational_errors": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "indeterminate_tasks": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "audited_final_decisions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "audit_complete_decisions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "runtime_observations_verified": {
+      "type": "boolean"
+    },
+    "revocation_response": {
+      "$ref": "urn:pcfl:0.1.0:metric-record#/$defs/revocation-response"
+    },
+    "runtime_stage_latency_ms": {
+      "type": "object",
+      "propertyNames": {
+        "enum": [
+          "run_initialization",
+          "issue_dispatch",
+          "ack_wait",
+          "ack_authorization",
+          "train_dispatch",
+          "policy_barrier",
+          "train_wait",
+          "receipt",
+          "publication",
+          "evaluation",
+          "run",
+          "failure"
+        ]
+      },
+      "additionalProperties": {
+        "type": "array",
+        "maxItems": 5000,
+        "items": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 604800000
+        }
+      }
+    },
+    "oracle_post_authorization_loss_invalid_publications": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Matches runtime_verify.verify_case aggregate output. Numerator/denominator inequalities and pairing belong to analysis; this verification summary alone is not a confirmatory experiment or hypothesis verdict. Final decisions include update decisions plus durable operational errors; indeterminate assigned tasks are a separate count. These counts require independent semantic audit/assignment verification. Optional observer records bind a single local clock to actual policy/operation identities. Exact response is always null; semantic verification checks ordered interval bounds, lifecycle causality and denominators separately. Missing telemetry is not right censoring.",
+  "$defs": {
+    "revocation-event": {
+      "type": "object",
+      "required": [
+        "run_id",
+        "event_id",
+        "org_id",
+        "order",
+        "epoch",
+        "kind",
+        "status",
+        "exact_response_ms",
+        "reason",
+        "response_lower_ms",
+        "response_upper_ms",
+        "censor_lower_ms",
+        "censor_upper_ms",
+        "task_id",
+        "update_id",
+        "manifest_id",
+        "operation_sequence",
+        "enforcement_order",
+        "operation"
+      ],
+      "properties": {
+        "run_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "event_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "org_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "epoch": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "kind": {
+          "enum": [
+            "REVOKE",
+            "EXPIRE",
+            "CHANGE"
+          ]
+        },
+        "status": {
+          "enum": [
+            "measured",
+            "right-censored",
+            "missing"
+          ]
+        },
+        "exact_response_ms": {
+          "type": "null"
+        },
+        "reason": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "response_lower_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 604800000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "response_upper_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 604800000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "censor_lower_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 604800000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "censor_upper_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 604800000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "task_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "update_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "manifest_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "operation_sequence": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "enforcement_order": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "operation": {
+          "anyOf": [
+            {
+              "enum": [
+                "issue",
+                "receive",
+                "publish"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "measured"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "response_lower_ms": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 604800000
+              },
+              "response_upper_ms": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 604800000
+              },
+              "censor_lower_ms": {
+                "type": "null"
+              },
+              "censor_upper_ms": {
+                "type": "null"
+              },
+              "operation_sequence": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "operation": {
+                "enum": [
+                  "issue",
+                  "receive",
+                  "publish"
+                ]
+              },
+              "task_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "update_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "manifest_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "enforcement_order": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "right-censored"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "response_lower_ms": {
+                "type": "null"
+              },
+              "response_upper_ms": {
+                "type": "null"
+              },
+              "censor_lower_ms": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 604800000
+              },
+              "censor_upper_ms": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 604800000
+              },
+              "operation_sequence": {
+                "type": "null"
+              },
+              "operation": {
+                "type": "null"
+              },
+              "task_id": {
+                "type": "null"
+              },
+              "update_id": {
+                "type": "null"
+              },
+              "manifest_id": {
+                "type": "null"
+              },
+              "enforcement_order": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "missing"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "response_lower_ms": {
+                "type": "null"
+              },
+              "response_upper_ms": {
+                "type": "null"
+              },
+              "censor_lower_ms": {
+                "type": "null"
+              },
+              "censor_upper_ms": {
+                "type": "null"
+              },
+              "operation_sequence": {
+                "type": "null"
+              },
+              "operation": {
+                "type": "null"
+              },
+              "task_id": {
+                "type": "null"
+              },
+              "update_id": {
+                "type": "null"
+              },
+              "manifest_id": {
+                "type": "null"
+              },
+              "enforcement_order": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "revocation-response": {
+      "type": "object",
+      "required": [
+        "status",
+        "clock",
+        "events",
+        "exact_response_ms",
+        "operation_coverage_complete",
+        "reason",
+        "opportunity_events",
+        "missing_events",
+        "measurement_errors",
+        "measured_events",
+        "right_censored_events"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "no-event",
+            "measured",
+            "right-censored",
+            "missing",
+            "mixed"
+          ]
+        },
+        "clock": {
+          "const": "coordinator-perf-counter-relative-ms"
+        },
+        "events": {
+          "type": "array",
+          "maxItems": 1000,
+          "items": {
+            "$ref": "urn:pcfl:0.1.0:metric-record#/$defs/revocation-event"
+          }
+        },
+        "exact_response_ms": {
+          "type": "null"
+        },
+        "operation_coverage_complete": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "opportunity_events": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "missing_events": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "measurement_errors": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "measured_events": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "right_censored_events": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "no-event"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "events": {
+                "maxItems": 0
+              },
+              "opportunity_events": {
+                "const": 0
+              },
+              "missing_events": {
+                "const": 0
+              },
+              "measured_events": {
+                "const": 0
+              },
+              "right_censored_events": {
+                "const": 0
+              },
+              "measurement_errors": {
+                "const": 0
+              },
+              "operation_coverage_complete": {
+                "const": true
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

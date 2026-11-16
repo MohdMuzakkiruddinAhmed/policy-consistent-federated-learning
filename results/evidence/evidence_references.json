@@ -1,0 +1,254 @@
+[
+  {
+    "alias": "abstract-only-literature-boundary",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "validation",
+    "kind": "user-provided-literature-abstract-provenance",
+    "path": "reports/ranathunga_abstract_provenance.json",
+    "reported_successful": null,
+    "sha256": "34d43a6a26c65f64b19dd20124c799c38b043b4f4880a315921f000c386209f4"
+  },
+  {
+    "alias": "bounded-alpha-data-preparation-failure",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "fault",
+    "kind": "non-iid-sensitivity-data-preparation",
+    "path": "reports/robustness_data_preparation.json",
+    "reported_successful": null,
+    "sha256": "4998d408a30dad6f9cea1a4ec6d6616b4b953e9f0047dd805bbb93efb94f2830"
+  },
+  {
+    "alias": "completed-protected-final-metric-replay",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "reproducibility",
+    "kind": "private-final-utility-numeric-replay",
+    "path": "results/f8r3/result.json",
+    "reported_successful": true,
+    "sha256": "084edc56d2e9ed239b53fd0898a2b03c1abb482dd624b21a82567278993ed672"
+  },
+  {
+    "alias": "copied-evidence-six-attacks",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "fault",
+    "kind": "externally-anchored-copied-cloud-evidence-tamper-test",
+    "path": "reports/cloud-stages/507f2b28dc12/tamper.json",
+    "reported_successful": true,
+    "sha256": "8facc10a846ffb5944240ef1cb9ceeceedfb375b984976b69e2f9b262641550c"
+  },
+  {
+    "alias": "early-forty-scope-review",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "validation",
+    "kind": "root-current-early-forty-semantic-review",
+    "path": "results/development/final_input_preparation_v1/root-early-forty-semantic-review-v1.json",
+    "reported_successful": null,
+    "sha256": "164a36c9c4b6560769eded4cef8e6d7f1d13425e7b8b3dd0b936a7d1fae450c5"
+  },
+  {
+    "alias": "failed-startup-zero-clinical-case-history",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "cost",
+    "kind": "closed-operational-zero-case",
+    "path": "results/aws/campaign-20261116T030236-04fcff/host-logs/crp1/zero-case-proof-v1.json",
+    "reported_successful": null,
+    "sha256": "cec754d9ce97af4837e1a21b1491abb95270c4b3c7625cf2aa9be516eddcbcc5"
+  },
+  {
+    "alias": "fresh-replica-IID-four-completion",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "replication",
+    "kind": "replica-application-controller-completion-v1",
+    "path": "results/aws/campaign-20261116T045134-dadbb4/host-logs/rr1/completion.json",
+    "reported_successful": null,
+    "sha256": "02eebe60fb2cdf9ef08705d64e0fe41b6e40c1569045260c51bdbb7016e693b6"
+  },
+  {
+    "alias": "fresh-replica-NI-four-completion",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "replication",
+    "kind": "replica-application-controller-completion-v1",
+    "path": "results/aws/campaign-20261116T045134-dadbb4/host-logs/nr1/completion.json",
+    "reported_successful": null,
+    "sha256": "49066c38276e8e1d469a8c006ac914de960cf510f184e463c991ba03456ae7d0"
+  },
+  {
+    "alias": "fresh-replica-NI-independent-review",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "replication",
+    "kind": "root-accepted-NI-completion-and-all-eight-cloud-attempts-review-v1",
+    "path": "results/aws/campaign-20261116T045134-dadbb4/host-logs/root-NI-completion-review-v1.json",
+    "reported_successful": null,
+    "sha256": "437a272f416585d0a285a43b639608bd364bd11c650b6ad5e5b068fbf161cf1c"
+  },
+  {
+    "alias": "original-accepted-main-placement",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "validation",
+    "kind": "actual-aws-learning-placement-validation",
+    "path": "reports/cloud-stages/cd464e8c87b5/placement.json",
+    "reported_successful": true,
+    "sha256": "4bdf3438b6622e15d14a85a623107a931cca8ff798177e2be99b10e2e9aa4f59"
+  },
+  {
+    "alias": "project1-native-seven-resource-closure",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "teardown",
+    "kind": "actual-aws-campaign-teardown-validation",
+    "path": "reports/campaign_teardown_readback_terminal_a_v7b.json",
+    "reported_successful": true,
+    "sha256": "6d9b842b5d7339dcb808670532b16bbf22233acd3fcf5f412beaa77ac6acce00"
+  },
+  {
+    "alias": "project2-native-seven-resource-closure",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "teardown",
+    "kind": "actual-aws-campaign-teardown-validation",
+    "path": "reports/campaign_teardown_readback_main_v9_r1.json",
+    "reported_successful": true,
+    "sha256": "7bb8744cf3575f27e9c3efd114eba521c03121fd16d9be6d8e114301f676f245"
+  },
+  {
+    "alias": "project3-native-seven-resource-closure",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "teardown",
+    "kind": "actual-aws-campaign-teardown-validation",
+    "path": "results/aws/campaign-20261114T192239-e43ce5/host-logs/foundation-cleanup-r1/native-full-readback.json",
+    "reported_successful": true,
+    "sha256": "97474b9fcc86a16ff08a40d45d8f2d41d9c4d8a59db341c25c1f4c89f48a47eb"
+  },
+  {
+    "alias": "project4-event-sidecar-absence",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "teardown",
+    "kind": "prospective-owned-ECS-terminal-event-capture-receipt",
+    "path": "results/aws/campaign-20261115T181929-f48f06/host-logs/taskcap-cleanup-r4/receipt.json",
+    "reported_successful": true,
+    "sha256": "b3dd805e188e934e58628844e3f15f3fae6a2aa532a254535417fda7d02f8722"
+  },
+  {
+    "alias": "project4-native-seven-resource-closure",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "teardown",
+    "kind": "actual-aws-campaign-teardown-validation",
+    "path": "results/aws/campaign-20261115T181929-f48f06/host-logs/ct1/native7.json",
+    "reported_successful": true,
+    "sha256": "ade2d143e2298a2d272a6660f73a5c7a6b9b175a575bd3a9896db09c84c9a447"
+  },
+  {
+    "alias": "project4-standalone-DNS-absence",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "teardown",
+    "kind": "actual-owned-standalone-support-discovery-closure-v1",
+    "path": "results/aws/campaign-20261115T181929-f48f06/host-logs/ct1/dns-absence.json",
+    "reported_successful": true,
+    "sha256": "84232dfdea71cf9136b36abb5a66163c74e780671f7465b9943399a87f3fa12b"
+  },
+  {
+    "alias": "project5-event-sidecar-absence",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "teardown",
+    "kind": "prospective-owned-ECS-terminal-event-capture-receipt",
+    "path": "results/aws/campaign-20261116T030236-04fcff/host-logs/taskcap-cleanup-r1/receipt.json",
+    "reported_successful": true,
+    "sha256": "9b1518c88736673e87c97e9eab435b2f04e12793e7561813a2fed7ee0fdbd07d"
+  },
+  {
+    "alias": "project5-native-seven-resource-closure",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "teardown",
+    "kind": "actual-aws-campaign-teardown-validation",
+    "path": "results/aws/campaign-20261116T030236-04fcff/host-logs/native7-ipv4-r1.json",
+    "reported_successful": true,
+    "sha256": "fae5c990fc64c3fd0b92ba9fc565cef02cd4779ece0a2dc7f904ea1de37c91f0"
+  },
+  {
+    "alias": "project5-standalone-DNS-absence",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "teardown",
+    "kind": "actual-owned-standalone-support-discovery-closure-v1",
+    "path": "results/aws/campaign-20261116T030236-04fcff/host-logs/cl1/dns-absence.json",
+    "reported_successful": true,
+    "sha256": "b57a3778c6bc2beffc55ff17ede4f25cd1c2c10c2c059a26b28aad844a36ddff"
+  },
+  {
+    "alias": "project6-event-sidecar-absence",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "teardown",
+    "kind": "prospective-owned-ECS-terminal-event-capture-receipt",
+    "path": "results/aws/campaign-20261116T045134-dadbb4/host-logs/taskcap-cleanup-r1/receipt.json",
+    "reported_successful": true,
+    "sha256": "939007ac7f19d6c8c4b315388e17e855649b663b9e945f1fe7cd3cd6820c6b92"
+  },
+  {
+    "alias": "project6-native-seven-resource-closure",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "teardown",
+    "kind": "actual-aws-campaign-teardown-validation",
+    "path": "results/aws/campaign-20261116T045134-dadbb4/host-logs/cl1/native7.json",
+    "reported_successful": true,
+    "sha256": "8b30f8ce6a3a1a23237095f9198234b6e94946d6a63b6a346ebe983aa3e22652"
+  },
+  {
+    "alias": "project6-standalone-DNS-absence",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "teardown",
+    "kind": "actual-owned-standalone-support-discovery-closure-v1",
+    "path": "results/aws/campaign-20261116T045134-dadbb4/host-logs/cl1/dns-absence.json",
+    "reported_successful": true,
+    "sha256": "cc4b9d99f6c86664e30a207925b7de4f0e48ee1ca10e90c378cfdfbbd83308fb"
+  },
+  {
+    "alias": "protected-partial-four-fault-cases",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "fault",
+    "kind": "independent-protected-four-case-S8-fault-verification",
+    "path": "reports/cloud_safety_fault_verification_v7.json",
+    "reported_successful": true,
+    "sha256": "e58de78b30eb428459de57a75d3bd8a1b8db1a9598fbe3a0df78cba137efa7b8"
+  },
+  {
+    "alias": "qualified-exploratory-placement-provenance",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "validation",
+    "kind": "exploratory-placement-scope-provenance-packet-v1",
+    "path": "results/aws/campaign-20261115T181929-f48f06/host-logs/sa1/placement-provenance-packet-v1.json",
+    "reported_successful": null,
+    "sha256": "ae3df4eda44d74c8941a1296417b041dd073a3938b0d455e196c25f45c820790"
+  },
+  {
+    "alias": "qualified-exploratory-placement-review",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "validation",
+    "kind": "root-actual-five-group-scoped-placement-evidence-review-v1",
+    "path": "results/aws/campaign-20261115T181929-f48f06/host-logs/sa1/root-actual-all5-placement-review-v1.json",
+    "reported_successful": null,
+    "sha256": "cb576abea176e507b0dfacc0c7c4a481b9f580fdbcdd58845695e5d4c85cbd30"
+  },
+  {
+    "alias": "separate-normalized21-exploration",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "exploratory",
+    "kind": "independent-exploratory-robustness-summary",
+    "path": "results/aws/campaign-20261115T181929-f48f06/host-logs/sa1/native-summary-v1.json",
+    "reported_successful": true,
+    "sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a"
+  },
+  {
+    "alias": "whole-B-independent-bound-review",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "cost",
+    "kind": "root-actual-complete-B-bounded-cost-evidence-review-v1",
+    "path": "results/development/final_input_preparation_v1/root-final-bounded-cost-review-v1.json",
+    "reported_successful": null,
+    "sha256": "3f97d1fa35fc5bbb27ca4f2691f1b2c8d717880326d4000bccaad6eb34e9e11c"
+  },
+  {
+    "alias": "whole-B-terminal-bounded-cost",
+    "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+    "category": "cost",
+    "kind": "administrative-bounded-terminal-cost-report",
+    "path": "results/financial/final-v8/t1/report.json",
+    "reported_successful": null,
+    "sha256": "7c48d4afd133cb9af783046fa407a74b6746af6a8d1e0b0296527647468003e7"
+  }
+]

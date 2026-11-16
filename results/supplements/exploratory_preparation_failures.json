@@ -1,0 +1,39 @@
+{
+  "confidence_interval": null,
+  "confirmatory": false,
+  "effect": null,
+  "rows": [
+    {
+      "actual_cloud_trial": false,
+      "clinical_cloud_trial": false,
+      "confidence_interval": null,
+      "distribution": "non_iid",
+      "effect": null,
+      "evidence": {
+        "alpha": 0.1,
+        "clinical_training_executed": false,
+        "constraints_weakened": false,
+        "minimum_patient_groups": 100,
+        "minimum_positive_encounters": 25,
+        "reason": "partition_constraints_not_met_within_retry_budget",
+        "retry_limit": 200,
+        "seed": 296,
+        "status": "failed"
+      },
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.1,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "seed": 296,
+      "status": "failed_preparation"
+    }
+  ],
+  "scope": "separate validation-only n=1 exploratory descriptives"
+}

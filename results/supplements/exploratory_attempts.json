@@ -1,0 +1,4676 @@
+{
+  "confidence_interval": null,
+  "confirmatory": false,
+  "effect": null,
+  "rows": [
+    {
+      "application_campaign_id": "robust-04397f8e06a4-bcbd0684233bebb9c3a3",
+      "attempt_id": "exploratory-attempt-d52c9fa24bae09ab0574220fe58b07a7",
+      "case_id": "exploratory-e0be4aa540d98ca93ce96478",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/de8ba2e6c9f8-scoped-inventory-v1.json",
+          "sha256": "b2f3fb4c176f52898ae8093502e2f17d3ee7935aa5b4768f35333dcbb5bb041e"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-bcbd0684233bebb9c3a3/campaign.json",
+          "sha256": "5fcacf277f96c9f252457d0a1a5bdca0b12e52ed74d559fb38fd1dd2926f1ac5"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/de8ba2e6/campaign_result.json",
+          "sha256": "7790cb799fccfdd6b8c0403fa2634bd0b356a9dcb5c72d829145527d7a40d8d1"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/de8ba2e6/cf48d5d6/runtime_result.json",
+          "sha256": "d3c39891b50c7df20f5d758b2a0116a52c43c5f7e37d29bdf93cbb1196036757"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/de8ba2e6/cf48d5d6/artifact_paths.json",
+          "sha256": "a1d226870070c7d3f8a19abd8aad7461933bb0b9c5ce4d2ecd1dbd321b8f027a"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/de8ba2e6/cf48d5d6/operator_witness-bfe80988.json",
+          "sha256": "bfe809881d589ce451999fde01343a5f1bb24a99cfb2f86af82cf8e548ba31bd"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-bcbd0684233bebb9c3a3/campaign_result.json",
+        "sha256": "7790cb799fccfdd6b8c0403fa2634bd0b356a9dcb5c72d829145527d7a40d8d1",
+        "size_bytes": 17643,
+        "version_id": "NSvUWYRSEKjsixXzX0SEhnCTP52gzemR"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          62757.02030799999,
+          60642.632698,
+          62008.70788400005,
+          60909.450017999916,
+          60144.41014800002
+        ],
+        "validation_metrics": {
+          "auprc": 0.20678305830865729,
+          "auroc": 0.6373835082867507,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.34451266661912583,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-bcbd0684233bebb9c3a3/exploratory-e0be4aa540d98ca93ce96478/runtime_result.json",
+        "sha256": "d3c39891b50c7df20f5d758b2a0116a52c43c5f7e37d29bdf93cbb1196036757",
+        "size_bytes": 1379113,
+        "version_id": "EbQgDrEDPbDY5yat7uWd2jgmJd0dIFQq"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-e0be4aa540d98ca93ce96478",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-c25bb38642c8fe13768d",
+      "attempt_id": "exploratory-attempt-505a5638ada6a07881994df53079ec26",
+      "case_id": "exploratory-b353622e03a216be65ef158f",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/8316ce499fac-scoped-inventory-v1.json",
+          "sha256": "03592f184cdd0e219b657ce3ac6af31b87eca3b9af1aa928a0b6f93708f23f53"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-c25bb38642c8fe13768d/campaign.json",
+          "sha256": "a1bf862b7e91640204d5a0e68e99ce7fe93eccfdf5543e655143fd2726d0d414"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/campaign_result.json",
+          "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/e995ca54/runtime_result.json",
+          "sha256": "ea6f801e340d18049ba32860467f886ee12b1edd7da146b2687d253bae7f62c9"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/e995ca54/artifact_paths.json",
+          "sha256": "ff5ac8b5d0a6b0fffdaeb437a6546e5c86b91d4a83df57bc643a7d6a99e2dfd3"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/e995ca54/operator_witness-15306ed3.json",
+          "sha256": "15306ed31ca2f34a0199843f49110d5139c83672ee6dbcd8ae3b38531177436f"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/campaign_result.json",
+        "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5",
+        "size_bytes": 144033,
+        "version_id": "BSYtFCp4Aph1UqdosAbR1k5RWnAOZMV3"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          60415.913246000004,
+          57673.16540600001,
+          61206.26291999997,
+          61600.672695000016,
+          60578.60862400003
+        ],
+        "validation_metrics": {
+          "auprc": 0.20519935966192396,
+          "auroc": 0.6333925784188504,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.34630120500700495,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/exploratory-b353622e03a216be65ef158f/runtime_result.json",
+        "sha256": "ea6f801e340d18049ba32860467f886ee12b1edd7da146b2687d253bae7f62c9",
+        "size_bytes": 1203297,
+        "version_id": "X9bQvU4vIBneNRPhmzulJOlr7Ykuwm8r"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-b353622e03a216be65ef158f",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-c25bb38642c8fe13768d",
+      "attempt_id": "exploratory-attempt-6facffd712e3280445408f3d5436673a",
+      "case_id": "exploratory-f00bbadf83f35bbc074e539c",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/8316ce499fac-scoped-inventory-v1.json",
+          "sha256": "03592f184cdd0e219b657ce3ac6af31b87eca3b9af1aa928a0b6f93708f23f53"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-c25bb38642c8fe13768d/campaign.json",
+          "sha256": "a1bf862b7e91640204d5a0e68e99ce7fe93eccfdf5543e655143fd2726d0d414"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/campaign_result.json",
+          "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/1f901da3/runtime_result.json",
+          "sha256": "ee57e28d2c072ee8f685794a0c54a0bba9dd4e5a58194311693e0123b0d60889"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/1f901da3/artifact_paths.json",
+          "sha256": "8e2be982028303b46d46e1153d93e834a246d01745bade0e3e7f2877cd83e22e"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/1f901da3/operator_witness-d491cc67.json",
+          "sha256": "d491cc67fba5a44e70d6e1477fd4229c756e4cd4b4b9ef0371c98483eca8ea18"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/campaign_result.json",
+        "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5",
+        "size_bytes": 144033,
+        "version_id": "BSYtFCp4Aph1UqdosAbR1k5RWnAOZMV3"
+      },
+      "metrics": {
+        "accepted_updates": 40,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 8,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 8,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 8,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 8,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 8,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 0,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 0,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          58526.60201499998,
+          59620.60613300002,
+          59157.292597000036,
+          62623.3397179999,
+          61871.25828399997
+        ],
+        "validation_metrics": {
+          "auprc": 0.2058835807298925,
+          "auroc": 0.632624094469148,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.34300370142933473,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/exploratory-f00bbadf83f35bbc074e539c/runtime_result.json",
+        "sha256": "ee57e28d2c072ee8f685794a0c54a0bba9dd4e5a58194311693e0123b0d60889",
+        "size_bytes": 1209098,
+        "version_id": "z6HD.TKJeqkA4uMD3fXJTfDl53i_RSoX"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-f00bbadf83f35bbc074e539c",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-c25bb38642c8fe13768d",
+      "attempt_id": "exploratory-attempt-bf6958551d846722ebc1698f0909b8b7",
+      "case_id": "exploratory-514c39c41843486eef363e5d",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/8316ce499fac-scoped-inventory-v1.json",
+          "sha256": "03592f184cdd0e219b657ce3ac6af31b87eca3b9af1aa928a0b6f93708f23f53"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-c25bb38642c8fe13768d/campaign.json",
+          "sha256": "a1bf862b7e91640204d5a0e68e99ce7fe93eccfdf5543e655143fd2726d0d414"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/campaign_result.json",
+          "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/e02964ee/runtime_result.json",
+          "sha256": "2f782a329ac4762009d7047036e68e338df957c289ce11bb8569c5e85d9fbe4e"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/e02964ee/artifact_paths.json",
+          "sha256": "30ebe87aa09c2a8dc6bb65e14934ce2a5afcb339084e3aeaf9a6acd23ed97f8e"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/e02964ee/operator_witness-19908352.json",
+          "sha256": "199083522c1850c244d08e4f5dfcd4239d5edc1038b7b89641b9a52e4e148aeb"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/campaign_result.json",
+        "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5",
+        "size_bytes": 144033,
+        "version_id": "BSYtFCp4Aph1UqdosAbR1k5RWnAOZMV3"
+      },
+      "metrics": {
+        "accepted_updates": 20,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 4,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 4,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 4,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 4,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 4,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 20,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 20,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          63040.11125400007,
+          61625.310382999945,
+          59822.75443800006,
+          62174.861315000046,
+          60528.382781999884
+        ],
+        "validation_metrics": {
+          "auprc": 0.20556796122450463,
+          "auroc": 0.6348780172316473,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.3471970146177208,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/exploratory-514c39c41843486eef363e5d/runtime_result.json",
+        "sha256": "2f782a329ac4762009d7047036e68e338df957c289ce11bb8569c5e85d9fbe4e",
+        "size_bytes": 1259849,
+        "version_id": "sYBou_YSIKYXax646Pqgy_1Ghx3iPHfp"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-514c39c41843486eef363e5d",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-c25bb38642c8fe13768d",
+      "attempt_id": "exploratory-attempt-51dba23eb0fca1162b154fbbb13bb8fb",
+      "case_id": "exploratory-ed28a908d505ce5db693d101",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/8316ce499fac-scoped-inventory-v1.json",
+          "sha256": "03592f184cdd0e219b657ce3ac6af31b87eca3b9af1aa928a0b6f93708f23f53"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-c25bb38642c8fe13768d/campaign.json",
+          "sha256": "a1bf862b7e91640204d5a0e68e99ce7fe93eccfdf5543e655143fd2726d0d414"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/campaign_result.json",
+          "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/5bbfcb34/runtime_result.json",
+          "sha256": "522da01dc6d3a551d8fafbbf67bfb2d66c069b4b4a90926d7cfd903a6a0beed2"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/5bbfcb34/artifact_paths.json",
+          "sha256": "d9061b9e7eef6767ae6d0ed56be3c9e6818bb7e77bbbf7c539a349543b3e3a7b"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/5bbfcb34/operator_witness-bcf522ab.json",
+          "sha256": "bcf522abaf2c69ea76737dcae9dbf44afddfee1a55365db469914f95941312cd"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/campaign_result.json",
+        "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5",
+        "size_bytes": 144033,
+        "version_id": "BSYtFCp4Aph1UqdosAbR1k5RWnAOZMV3"
+      },
+      "metrics": {
+        "accepted_updates": 15,
+        "acknowledged_tasks": 20,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 3,
+            "org_ids": [
+              "org_01",
+              "org_04",
+              "org_05",
+              "org_07"
+            ],
+            "round_id": "round-1",
+            "selected_count": 4
+          },
+          {
+            "accepted_count": 3,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_04",
+              "org_06"
+            ],
+            "round_id": "round-2",
+            "selected_count": 4
+          },
+          {
+            "accepted_count": 3,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_06",
+              "org_07"
+            ],
+            "round_id": "round-3",
+            "selected_count": 4
+          },
+          {
+            "accepted_count": 3,
+            "org_ids": [
+              "org_02",
+              "org_04",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 4
+          },
+          {
+            "accepted_count": 3,
+            "org_ids": [
+              "org_02",
+              "org_04",
+              "org_06",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 4
+          }
+        ],
+        "assigned_tasks": 20,
+        "audit_complete_decisions": 20,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 20,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 20,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          54251.07580199983,
+          56488.654746000066,
+          48122.27982800004,
+          55420.20669400017,
+          55995.45810800009
+        ],
+        "validation_metrics": {
+          "auprc": 0.20591147892493716,
+          "auroc": 0.6325002727327782,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.3472178555505763,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/exploratory-ed28a908d505ce5db693d101/runtime_result.json",
+        "sha256": "522da01dc6d3a551d8fafbbf67bfb2d66c069b4b4a90926d7cfd903a6a0beed2",
+        "size_bytes": 911217,
+        "version_id": "DXyRN4jj2B6XXhZ1wa4Qam8mfm1.vJl9"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-ed28a908d505ce5db693d101",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-c25bb38642c8fe13768d",
+      "attempt_id": "exploratory-attempt-6c3cc431c0d88cc5b1ca49a09d42c300",
+      "case_id": "exploratory-44e13456f5fb1f9388fbfe25",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/8316ce499fac-scoped-inventory-v1.json",
+          "sha256": "03592f184cdd0e219b657ce3ac6af31b87eca3b9af1aa928a0b6f93708f23f53"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-c25bb38642c8fe13768d/campaign.json",
+          "sha256": "a1bf862b7e91640204d5a0e68e99ce7fe93eccfdf5543e655143fd2726d0d414"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/campaign_result.json",
+          "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/0de0d893/runtime_result.json",
+          "sha256": "416d2d6b87e791ed0bc536a6d3b711fa38b494194825c89aecbfd2c147db9c2a"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/0de0d893/artifact_paths.json",
+          "sha256": "ae155185be6cd96c0102928b806b5e7fccb8a8f005d8767468ec9f0ef313aedd"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/0de0d893/operator_witness-125f0c01.json",
+          "sha256": "125f0c01d3c260fdf9d166f9f4a649dc070defedaa20f527f03009956b0d54f6"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/campaign_result.json",
+        "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5",
+        "size_bytes": 144033,
+        "version_id": "BSYtFCp4Aph1UqdosAbR1k5RWnAOZMV3"
+      },
+      "metrics": {
+        "accepted_updates": 25,
+        "acknowledged_tasks": 30,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 5,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_04",
+              "org_05",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 6
+          },
+          {
+            "accepted_count": 5,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_04",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 6
+          },
+          {
+            "accepted_count": 5,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_05",
+              "org_06",
+              "org_07"
+            ],
+            "round_id": "round-3",
+            "selected_count": 6
+          },
+          {
+            "accepted_count": 5,
+            "org_ids": [
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 6
+          },
+          {
+            "accepted_count": 5,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 6
+          }
+        ],
+        "assigned_tasks": 30,
+        "audit_complete_decisions": 30,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 30,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 30,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          60783.96901400015,
+          58534.90296399991,
+          49583.168316999945,
+          60605.43951,
+          59913.102653999886
+        ],
+        "validation_metrics": {
+          "auprc": 0.20459852694495773,
+          "auroc": 0.6337098557924117,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.3524083053122859,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/exploratory-44e13456f5fb1f9388fbfe25/runtime_result.json",
+        "sha256": "416d2d6b87e791ed0bc536a6d3b711fa38b494194825c89aecbfd2c147db9c2a",
+        "size_bytes": 1109750,
+        "version_id": "K9sW16xnvEYJJ8_D0A8ba7jAhW3s4EG."
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-44e13456f5fb1f9388fbfe25",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-c25bb38642c8fe13768d",
+      "attempt_id": "exploratory-attempt-274b8e9be844381cd08febfd165da80a",
+      "case_id": "exploratory-d29b000de5b9318e83e6baa4",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/8316ce499fac-scoped-inventory-v1.json",
+          "sha256": "03592f184cdd0e219b657ce3ac6af31b87eca3b9af1aa928a0b6f93708f23f53"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-c25bb38642c8fe13768d/campaign.json",
+          "sha256": "a1bf862b7e91640204d5a0e68e99ce7fe93eccfdf5543e655143fd2726d0d414"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/campaign_result.json",
+          "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/20cce627/runtime_result.json",
+          "sha256": "a43845b95fad2d21f3a4d479e648bf3d3964e09eac27af7ede44c8eab107118e"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/20cce627/artifact_paths.json",
+          "sha256": "1a681b6f0c1fe991f506aed8da9a2d9195e48f9c93df44e372eda873ea5932b1"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/20cce627/operator_witness-dd655402.json",
+          "sha256": "dd655402133d135b18fe4d3bf4ac1408d68e86cd5db191c8f05acbbb84b5688b"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/campaign_result.json",
+        "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5",
+        "size_bytes": 144033,
+        "version_id": "BSYtFCp4Aph1UqdosAbR1k5RWnAOZMV3"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 250,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          61353.83970299995,
+          60804.99455799986,
+          60751.55977100007,
+          60559.6023510002,
+          59294.3030020001
+        ],
+        "validation_metrics": {
+          "auprc": 0.20519935966192396,
+          "auroc": 0.6333925784188504,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.34630120500700495,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/exploratory-d29b000de5b9318e83e6baa4/runtime_result.json",
+        "sha256": "a43845b95fad2d21f3a4d479e648bf3d3964e09eac27af7ede44c8eab107118e",
+        "size_bytes": 1308399,
+        "version_id": "reaoeAMxwAbdCo8xOR_AdBMGObQbUz5M"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-d29b000de5b9318e83e6baa4",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-c25bb38642c8fe13768d",
+      "attempt_id": "exploratory-attempt-8423752328f489f86cc4dc5314eb163e",
+      "case_id": "exploratory-558801139480228c0d4d7758",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/8316ce499fac-scoped-inventory-v1.json",
+          "sha256": "03592f184cdd0e219b657ce3ac6af31b87eca3b9af1aa928a0b6f93708f23f53"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-c25bb38642c8fe13768d/campaign.json",
+          "sha256": "a1bf862b7e91640204d5a0e68e99ce7fe93eccfdf5543e655143fd2726d0d414"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/campaign_result.json",
+          "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/55c0abfd/runtime_result.json",
+          "sha256": "b13920042d60ce62d8b5337d00d84f43d4ccde41b1058e49b67f1e3d4844ca09"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/55c0abfd/artifact_paths.json",
+          "sha256": "f136eaa6f3020806aeded633a9c391d210810b6ee34e87f024e80e6add8bd17e"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/55c0abfd/operator_witness-18749807.json",
+          "sha256": "18749807dbf1ab9987151a86ebfb1bb60c7294e8bc91b9877dbdf148fe8b5707"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/campaign_result.json",
+        "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5",
+        "size_bytes": 144033,
+        "version_id": "BSYtFCp4Aph1UqdosAbR1k5RWnAOZMV3"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 1000,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          60355.95140799978,
+          62919.7156350001,
+          62096.82372499992,
+          62483.68506999986,
+          63991.40410400014
+        ],
+        "validation_metrics": {
+          "auprc": 0.20519935966192396,
+          "auroc": 0.6333925784188504,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.34630120500700495,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/exploratory-558801139480228c0d4d7758/runtime_result.json",
+        "sha256": "b13920042d60ce62d8b5337d00d84f43d4ccde41b1058e49b67f1e3d4844ca09",
+        "size_bytes": 1326150,
+        "version_id": "CnnFccPrVHFx9xQFbpaUdO0mo6PVaB8d"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-558801139480228c0d4d7758",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-c25bb38642c8fe13768d",
+      "attempt_id": "exploratory-attempt-c2b32a5daa634a8095ae31851fac57e9",
+      "case_id": "exploratory-e801637d34dfcf619dd030fb",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/8316ce499fac-scoped-inventory-v1.json",
+          "sha256": "03592f184cdd0e219b657ce3ac6af31b87eca3b9af1aa928a0b6f93708f23f53"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-c25bb38642c8fe13768d/campaign.json",
+          "sha256": "a1bf862b7e91640204d5a0e68e99ce7fe93eccfdf5543e655143fd2726d0d414"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/campaign_result.json",
+          "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/9528a47e/runtime_result.json",
+          "sha256": "4cccc721cfbeefe3da6289a0143175bec8d4c5423b3b1e5114d57f26bc9e0228"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/9528a47e/artifact_paths.json",
+          "sha256": "877ca15c9bb02b34e89f464884e70f1647f42891fa9a795d2b8d55f842e284fb"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/9528a47e/operator_witness-0faa19d1.json",
+          "sha256": "0faa19d100abcbe9168f02ec96c1e1d64bed90504895088da1d87c8be904eeb8"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/campaign_result.json",
+        "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5",
+        "size_bytes": 144033,
+        "version_id": "BSYtFCp4Aph1UqdosAbR1k5RWnAOZMV3"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000
+        ],
+        "round_durations_ms": [
+          59369.771313000005,
+          61483.74104799995,
+          60640.418468,
+          61276.398516999965,
+          60897.5698170002
+        ],
+        "validation_metrics": {
+          "auprc": 0.20519935966192396,
+          "auroc": 0.6333925784188504,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.34630120500700495,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/exploratory-e801637d34dfcf619dd030fb/runtime_result.json",
+        "sha256": "4cccc721cfbeefe3da6289a0143175bec8d4c5423b3b1e5114d57f26bc9e0228",
+        "size_bytes": 1343990,
+        "version_id": "wR1uhaYRSHMcaKpt.18V7O5m3O_KBI0s"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-e801637d34dfcf619dd030fb",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-c25bb38642c8fe13768d",
+      "attempt_id": "exploratory-attempt-b2f8ddc0abf1bdf66aee5b1928560274",
+      "case_id": "exploratory-4cd1cae942cf6973b7956f88",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/8316ce499fac-scoped-inventory-v1.json",
+          "sha256": "03592f184cdd0e219b657ce3ac6af31b87eca3b9af1aa928a0b6f93708f23f53"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-c25bb38642c8fe13768d/campaign.json",
+          "sha256": "a1bf862b7e91640204d5a0e68e99ce7fe93eccfdf5543e655143fd2726d0d414"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/campaign_result.json",
+          "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/6c5e1b1f/runtime_result.json",
+          "sha256": "e9054671f17db196ef5c37fcb014a09d4a0e49365436e619d66fa1b52b880cf1"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/6c5e1b1f/artifact_paths.json",
+          "sha256": "0cd3d4a2245d29b889a4dc62dae9152410adcfc6749ec00afb77692e36930182"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/8316ce49/6c5e1b1f/operator_witness-27066236.json",
+          "sha256": "2706623607b7096c6db3088d43dac9b6aec1740c3946f0f5c78ff82d8ac1fc89"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/campaign_result.json",
+        "sha256": "fa2bb379a3e4028ce46ab9388cbeb74267336224cbb48b246e6fb06c83764ee5",
+        "size_bytes": 144033,
+        "version_id": "BSYtFCp4Aph1UqdosAbR1k5RWnAOZMV3"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000
+        ],
+        "round_durations_ms": [
+          62285.84904399986,
+          59736.201623999936,
+          61289.9858830001,
+          66970.40018000007,
+          61888.0127010002
+        ],
+        "validation_metrics": {
+          "auprc": 0.20519935966192396,
+          "auroc": 0.6333925784188504,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.34630120500700495,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-c25bb38642c8fe13768d/exploratory-4cd1cae942cf6973b7956f88/runtime_result.json",
+        "sha256": "e9054671f17db196ef5c37fcb014a09d4a0e49365436e619d66fa1b52b880cf1",
+        "size_bytes": 1361674,
+        "version_id": "VBm27PfYTJJPg603bxLUvlSyzmQ7.VOD"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-4cd1cae942cf6973b7956f88",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-d5e933ce6105e3a3c1b0",
+      "attempt_id": "exploratory-attempt-d719f80e469b2a078d50654b09c40ba9",
+      "case_id": "exploratory-a48a796ffed75cb44583d34d",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/50135048e3aa-scoped-inventory-v1.json",
+          "sha256": "e4bc599e612a5b04d7c0ec18f6e06838ab14b97ace42863bd0130d345254aa87"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-d5e933ce6105e3a3c1b0/campaign.json",
+          "sha256": "8172937a478f9a49375b2271384515763fafdf100ff844d974e8b8d0ef19558b"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/50135048/campaign_result.json",
+          "sha256": "148c7249dad08bc99f99d96720a30c7b399376eaf504ffee2298bfb7b995dc51"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/50135048/0b6a1b53/runtime_result.json",
+          "sha256": "411736f3bcb4381807b9873917bd00ad8fc6779e23cdc047466e49fd1ab3f87c"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/50135048/0b6a1b53/artifact_paths.json",
+          "sha256": "fdefa9fc6610e32ba46958d97c8debdc1ec2b995e244835c21ec5de4bb38a64b"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/50135048/0b6a1b53/operator_witness-fe250c24.json",
+          "sha256": "fe250c244fe7a7a97271498a50b6a03149948b1add551184639bfeefff2a02f2"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-d5e933ce6105e3a3c1b0/campaign_result.json",
+        "sha256": "148c7249dad08bc99f99d96720a30c7b399376eaf504ffee2298bfb7b995dc51",
+        "size_bytes": 17686,
+        "version_id": "Dj1jAOOEy6Ly0S_fbEemPkC9iTB1zJUJ"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 233484,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          55239.15280899999,
+          54289.54372100003,
+          54232.514499999976,
+          55895.71682100001,
+          56855.779551000014
+        ],
+        "validation_metrics": {
+          "auprc": 0.2054598109160059,
+          "auroc": 0.6350131492016051,
+          "count": 15324,
+          "f1": 0.005707762557077625,
+          "loss": 0.34222400757887445,
+          "positive_count": 1745,
+          "precision": 0.7142857142857143,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0028653295128939827,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-d5e933ce6105e3a3c1b0/exploratory-a48a796ffed75cb44583d34d/runtime_result.json",
+        "sha256": "411736f3bcb4381807b9873917bd00ad8fc6779e23cdc047466e49fd1ab3f87c",
+        "size_bytes": 1185662,
+        "version_id": "F2vyWDQderJbany_iydUx5bh30PLnQRm"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-a48a796ffed75cb44583d34d",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-fb5ecf455583480af557",
+      "attempt_id": "exploratory-attempt-1c070af24225ff8ccd639bb1e60e1c27",
+      "case_id": "exploratory-52d0a37d48b5b2d008c3fc91",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/7f765107f675-scoped-inventory-v1.json",
+          "sha256": "5bd1dc2c7a7b753005f8fc860f7fed049ad5fb44f36e0ef1aada8113a31a7966"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-fb5ecf455583480af557/campaign.json",
+          "sha256": "3d70b09c7d09b4d8dbc60b9bb6cfe435334f01dfa15400d9625bc98fc4841139"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/campaign_result.json",
+          "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/004f9687/runtime_result.json",
+          "sha256": "827085c671e007d3fd1206a47d3b727c96714f12e9c31c29c1260bb6b9b13d6c"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/004f9687/artifact_paths.json",
+          "sha256": "7c3b5afb885fe3e684f7c449980975ab809e716001bfa58f1c59e066b9514518"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/004f9687/operator_witness-8a4d78ba.json",
+          "sha256": "8a4d78baa882ebb4c448dbffe2541bceec296ccda598b1f54e9374cbdb6aa3d0"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/campaign_result.json",
+        "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327",
+        "size_bytes": 144032,
+        "version_id": "LoBDeIy4DIrO.xlbrrlOeQ.OAaWunryd"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          51047.83990100003,
+          49527.001606,
+          51297.01112000004,
+          51213.060283000006,
+          52099.96731900003
+        ],
+        "validation_metrics": {
+          "auprc": 0.20636612633530202,
+          "auroc": 0.6356378707978843,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.3410296279560707,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/exploratory-52d0a37d48b5b2d008c3fc91/runtime_result.json",
+        "sha256": "827085c671e007d3fd1206a47d3b727c96714f12e9c31c29c1260bb6b9b13d6c",
+        "size_bytes": 1009850,
+        "version_id": "AiIP1KUhbaL7KHCDOvYEzzKjGjIlBm75"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-52d0a37d48b5b2d008c3fc91",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-fb5ecf455583480af557",
+      "attempt_id": "exploratory-attempt-c8dc1f542b6fb16d3f4adf37956cf527",
+      "case_id": "exploratory-ba5afa8bd2ca72cfda8cdc9e",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/7f765107f675-scoped-inventory-v1.json",
+          "sha256": "5bd1dc2c7a7b753005f8fc860f7fed049ad5fb44f36e0ef1aada8113a31a7966"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-fb5ecf455583480af557/campaign.json",
+          "sha256": "3d70b09c7d09b4d8dbc60b9bb6cfe435334f01dfa15400d9625bc98fc4841139"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/campaign_result.json",
+          "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/4ebd4a0f/runtime_result.json",
+          "sha256": "6f2e5437d12267de3fc51baf444af679825c3c1b3cb82d5fa7fb94afe8c83121"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/4ebd4a0f/artifact_paths.json",
+          "sha256": "ec9d6a8472fdf1b5fb680faede2198c3e89ff34b4b8e04ee5c2fa32026e24b56"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/4ebd4a0f/operator_witness-a949625a.json",
+          "sha256": "a949625a036224cff67779cd9cd0a863111f7145a1fd25e8bad576ab749dba5a"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/campaign_result.json",
+        "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327",
+        "size_bytes": 144032,
+        "version_id": "LoBDeIy4DIrO.xlbrrlOeQ.OAaWunryd"
+      },
+      "metrics": {
+        "accepted_updates": 40,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 8,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 8,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 8,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 8,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 8,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 0,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 0,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          48410.24153299998,
+          50176.425898000045,
+          50199.32100699998,
+          51778.033191000075,
+          51229.286835000035
+        ],
+        "validation_metrics": {
+          "auprc": 0.20569372572560052,
+          "auroc": 0.6359236652078013,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.3409814618020293,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/exploratory-ba5afa8bd2ca72cfda8cdc9e/runtime_result.json",
+        "sha256": "6f2e5437d12267de3fc51baf444af679825c3c1b3cb82d5fa7fb94afe8c83121",
+        "size_bytes": 1015624,
+        "version_id": "sXa_3eZ_OMEKGtFGUlgP95VUepEWW_Mu"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-ba5afa8bd2ca72cfda8cdc9e",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-fb5ecf455583480af557",
+      "attempt_id": "exploratory-attempt-a6ad4f377a53f8d62ead207a5f1e4202",
+      "case_id": "exploratory-4436c67e8650a98c6e90b5df",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/7f765107f675-scoped-inventory-v1.json",
+          "sha256": "5bd1dc2c7a7b753005f8fc860f7fed049ad5fb44f36e0ef1aada8113a31a7966"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-fb5ecf455583480af557/campaign.json",
+          "sha256": "3d70b09c7d09b4d8dbc60b9bb6cfe435334f01dfa15400d9625bc98fc4841139"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/campaign_result.json",
+          "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/f149deba/runtime_result.json",
+          "sha256": "a3b16369f8d4b0fd852b859ad9c5ff62aa110a270611327269b846b28888806e"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/f149deba/artifact_paths.json",
+          "sha256": "be432bdd1ede5f78f8f11d1f5fa56633038f46a7d0df63099025d935e540a026"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/f149deba/operator_witness-3dbf9afb.json",
+          "sha256": "3dbf9afb4b64c2544e16ce0e15a1fb328c8c1779ce7a0a413fb52b33d37750b5"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/campaign_result.json",
+        "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327",
+        "size_bytes": 144032,
+        "version_id": "LoBDeIy4DIrO.xlbrrlOeQ.OAaWunryd"
+      },
+      "metrics": {
+        "accepted_updates": 20,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 4,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 4,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 4,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 4,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 4,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 20,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 20,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          52004.18424200006,
+          51210.753642999975,
+          51881.75100799993,
+          51236.43201499999,
+          51644.323147000025
+        ],
+        "validation_metrics": {
+          "auprc": 0.2066173473538595,
+          "auroc": 0.6364513635689357,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.3408478667424261,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/exploratory-4436c67e8650a98c6e90b5df/runtime_result.json",
+        "sha256": "a3b16369f8d4b0fd852b859ad9c5ff62aa110a270611327269b846b28888806e",
+        "size_bytes": 1066276,
+        "version_id": "a0kxHbr9dRSunoHlaFsZLaCG1AjxgVkd"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-4436c67e8650a98c6e90b5df",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-fb5ecf455583480af557",
+      "attempt_id": "exploratory-attempt-9e8a356ca6042548b4699a1720b54728",
+      "case_id": "exploratory-8aa3ad55aedba0708075f812",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/7f765107f675-scoped-inventory-v1.json",
+          "sha256": "5bd1dc2c7a7b753005f8fc860f7fed049ad5fb44f36e0ef1aada8113a31a7966"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-fb5ecf455583480af557/campaign.json",
+          "sha256": "3d70b09c7d09b4d8dbc60b9bb6cfe435334f01dfa15400d9625bc98fc4841139"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/campaign_result.json",
+          "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/fc8ada8d/runtime_result.json",
+          "sha256": "bde7f07404a5855209d74d058be42b4724e2d85ea690a4cd3fd459a3ec7003a9"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/fc8ada8d/artifact_paths.json",
+          "sha256": "a1c228c385210387792c351f649a42c8856027de44df8fdbca6be7fe55ae0c48"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/fc8ada8d/operator_witness-6d4a1a68.json",
+          "sha256": "6d4a1a6847c2180dacb62cff32ad5e7fb9ae115a1ca6aa91b86d0dab6d61ddba"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/campaign_result.json",
+        "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327",
+        "size_bytes": 144032,
+        "version_id": "LoBDeIy4DIrO.xlbrrlOeQ.OAaWunryd"
+      },
+      "metrics": {
+        "accepted_updates": 15,
+        "acknowledged_tasks": 20,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 3,
+            "org_ids": [
+              "org_01",
+              "org_04",
+              "org_05",
+              "org_07"
+            ],
+            "round_id": "round-1",
+            "selected_count": 4
+          },
+          {
+            "accepted_count": 3,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_04",
+              "org_06"
+            ],
+            "round_id": "round-2",
+            "selected_count": 4
+          },
+          {
+            "accepted_count": 3,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_06",
+              "org_07"
+            ],
+            "round_id": "round-3",
+            "selected_count": 4
+          },
+          {
+            "accepted_count": 3,
+            "org_ids": [
+              "org_02",
+              "org_04",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 4
+          },
+          {
+            "accepted_count": 3,
+            "org_ids": [
+              "org_02",
+              "org_04",
+              "org_06",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 4
+          }
+        ],
+        "assigned_tasks": 20,
+        "audit_complete_decisions": 20,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 20,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 20,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          45980.90177899985,
+          46587.49271500005,
+          48201.10893900005,
+          48799.701730999914,
+          49099.55417900005
+        ],
+        "validation_metrics": {
+          "auprc": 0.20469355168647024,
+          "auroc": 0.6352489549112053,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.34094700505857334,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/exploratory-8aa3ad55aedba0708075f812/runtime_result.json",
+        "sha256": "bde7f07404a5855209d74d058be42b4724e2d85ea690a4cd3fd459a3ec7003a9",
+        "size_bytes": 717796,
+        "version_id": "n_FgQ5yseRXRd6cuC7FwLhxiRzxqdTR8"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-8aa3ad55aedba0708075f812",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-fb5ecf455583480af557",
+      "attempt_id": "exploratory-attempt-fd09d746a9d5427874277d3b17021512",
+      "case_id": "exploratory-79052fb3106723e73016f6bf",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/7f765107f675-scoped-inventory-v1.json",
+          "sha256": "5bd1dc2c7a7b753005f8fc860f7fed049ad5fb44f36e0ef1aada8113a31a7966"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-fb5ecf455583480af557/campaign.json",
+          "sha256": "3d70b09c7d09b4d8dbc60b9bb6cfe435334f01dfa15400d9625bc98fc4841139"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/campaign_result.json",
+          "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/02ce5573/runtime_result.json",
+          "sha256": "d28e4c9cce7933a68c603826315db28d9b3bb851d699574e602c6a79905e92a9"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/02ce5573/artifact_paths.json",
+          "sha256": "51b9746fc24dd28720c533a4cc969d766e408dbe97bac90aa6e23fa70a72bad7"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/02ce5573/operator_witness-99613cf4.json",
+          "sha256": "99613cf40a754602a940d37e2f5c8a2557794b17898254e9ee5ebdfab4fdabb7"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/campaign_result.json",
+        "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327",
+        "size_bytes": 144032,
+        "version_id": "LoBDeIy4DIrO.xlbrrlOeQ.OAaWunryd"
+      },
+      "metrics": {
+        "accepted_updates": 25,
+        "acknowledged_tasks": 30,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 5,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_04",
+              "org_05",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 6
+          },
+          {
+            "accepted_count": 5,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_04",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 6
+          },
+          {
+            "accepted_count": 5,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_05",
+              "org_06",
+              "org_07"
+            ],
+            "round_id": "round-3",
+            "selected_count": 6
+          },
+          {
+            "accepted_count": 5,
+            "org_ids": [
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 6
+          },
+          {
+            "accepted_count": 5,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 6
+          }
+        ],
+        "assigned_tasks": 30,
+        "audit_complete_decisions": 30,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 30,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 30,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          51093.628008,
+          47985.95168399993,
+          48104.39387500014,
+          49109.760168000095,
+          50397.09536100009
+        ],
+        "validation_metrics": {
+          "auprc": 0.20565582661030057,
+          "auroc": 0.6351957377300319,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.3411603413310259,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/exploratory-79052fb3106723e73016f6bf/runtime_result.json",
+        "sha256": "d28e4c9cce7933a68c603826315db28d9b3bb851d699574e602c6a79905e92a9",
+        "size_bytes": 916252,
+        "version_id": "HQni31Or3TboNXRt5q.I.5zkkN38uLJu"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-79052fb3106723e73016f6bf",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-fb5ecf455583480af557",
+      "attempt_id": "exploratory-attempt-749119a55503313c6347f79724499fde",
+      "case_id": "exploratory-1a1e7f7a3a25104db8ccb475",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/7f765107f675-scoped-inventory-v1.json",
+          "sha256": "5bd1dc2c7a7b753005f8fc860f7fed049ad5fb44f36e0ef1aada8113a31a7966"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-fb5ecf455583480af557/campaign.json",
+          "sha256": "3d70b09c7d09b4d8dbc60b9bb6cfe435334f01dfa15400d9625bc98fc4841139"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/campaign_result.json",
+          "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/6db6ab01/runtime_result.json",
+          "sha256": "b54b6bc97ff871edcf36da176f72b84bc8f12f2cbdf18f7fb14560f595fbf07a"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/6db6ab01/artifact_paths.json",
+          "sha256": "0acab1b67a68fc32d441dc3e3e9d8068e0429c00108c8c9487891272b72def4e"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/6db6ab01/operator_witness-1a5043f2.json",
+          "sha256": "1a5043f245acb7124ae2d77978cc711b1d0a4b35da37ba8cf5dfb1860ada0a17"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/campaign_result.json",
+        "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327",
+        "size_bytes": 144032,
+        "version_id": "LoBDeIy4DIrO.xlbrrlOeQ.OAaWunryd"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 250,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          52442.04296299995,
+          51059.20085900016,
+          52798.361196000085,
+          51308.289467000126,
+          55347.162072999934
+        ],
+        "validation_metrics": {
+          "auprc": 0.20636612633530202,
+          "auroc": 0.6356378707978843,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.3410296279560707,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/exploratory-1a1e7f7a3a25104db8ccb475/runtime_result.json",
+        "sha256": "b54b6bc97ff871edcf36da176f72b84bc8f12f2cbdf18f7fb14560f595fbf07a",
+        "size_bytes": 1114806,
+        "version_id": "_AjhlLgkozBnmOEKD4x0oby_YQY2xN1b"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-1a1e7f7a3a25104db8ccb475",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-fb5ecf455583480af557",
+      "attempt_id": "exploratory-attempt-5ba13d7813005ccaec8406f50a7763d9",
+      "case_id": "exploratory-48c45538e3b6da37d3998986",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/7f765107f675-scoped-inventory-v1.json",
+          "sha256": "5bd1dc2c7a7b753005f8fc860f7fed049ad5fb44f36e0ef1aada8113a31a7966"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-fb5ecf455583480af557/campaign.json",
+          "sha256": "3d70b09c7d09b4d8dbc60b9bb6cfe435334f01dfa15400d9625bc98fc4841139"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/campaign_result.json",
+          "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/26ce9a71/runtime_result.json",
+          "sha256": "b8f3039c68b4e442f055be613ad470a0689707e27766d9ff476f417d2cc981a2"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/26ce9a71/artifact_paths.json",
+          "sha256": "6d2c8cd3c9a89398659210db66f68a6c0961f744eadd6a84b5df6d8c7af85b9b"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/26ce9a71/operator_witness-4e4b7777.json",
+          "sha256": "4e4b77776e7c3490cb30a078cb0983a86a424e6852c57e6c6eb8f75adeee52ec"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/campaign_result.json",
+        "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327",
+        "size_bytes": 144032,
+        "version_id": "LoBDeIy4DIrO.xlbrrlOeQ.OAaWunryd"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 1000,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          52445.832397000006,
+          53624.62100499988,
+          52877.08007299989,
+          51907.428941000035,
+          53105.802867999955
+        ],
+        "validation_metrics": {
+          "auprc": 0.20636612633530202,
+          "auroc": 0.6356378707978843,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.3410296279560707,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/exploratory-48c45538e3b6da37d3998986/runtime_result.json",
+        "sha256": "b8f3039c68b4e442f055be613ad470a0689707e27766d9ff476f417d2cc981a2",
+        "size_bytes": 1132621,
+        "version_id": "zmGstK9VoblnO2h1mIG5..IpDR4.0P5w"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-48c45538e3b6da37d3998986",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-fb5ecf455583480af557",
+      "attempt_id": "exploratory-attempt-a3c1664863e1642610bf26f036a530e0",
+      "case_id": "exploratory-b762ed1ba80c86de1d320bac",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/7f765107f675-scoped-inventory-v1.json",
+          "sha256": "5bd1dc2c7a7b753005f8fc860f7fed049ad5fb44f36e0ef1aada8113a31a7966"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-fb5ecf455583480af557/campaign.json",
+          "sha256": "3d70b09c7d09b4d8dbc60b9bb6cfe435334f01dfa15400d9625bc98fc4841139"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/campaign_result.json",
+          "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/e8371414/runtime_result.json",
+          "sha256": "ccb8f99aedd67607db46a660a745a3e1289551dcb968fac2d83b4778c9ac2c74"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/e8371414/artifact_paths.json",
+          "sha256": "21dd60634287c7f4f4758d2f3ae655d79423d6934d637e138eb4118090a53e03"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/e8371414/operator_witness-16c014a5.json",
+          "sha256": "16c014a5ef7507c96534f393e85a9241fb57b84fe47bb9d8fa3c47da3e9a2c0e"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/campaign_result.json",
+        "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327",
+        "size_bytes": 144032,
+        "version_id": "LoBDeIy4DIrO.xlbrrlOeQ.OAaWunryd"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000,
+          -60000
+        ],
+        "round_durations_ms": [
+          52464.25413299994,
+          51912.869967000006,
+          54892.263295000244,
+          53477.65278199995,
+          53683.96540399999
+        ],
+        "validation_metrics": {
+          "auprc": 0.20636612633530202,
+          "auroc": 0.6356378707978843,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.3410296279560707,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/exploratory-b762ed1ba80c86de1d320bac/runtime_result.json",
+        "sha256": "ccb8f99aedd67607db46a660a745a3e1289551dcb968fac2d83b4778c9ac2c74",
+        "size_bytes": 1150416,
+        "version_id": "r0H1Xgfnya2nzv_YDBPGKvGaE2XnI4dU"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-b762ed1ba80c86de1d320bac",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-fb5ecf455583480af557",
+      "attempt_id": "exploratory-attempt-dfe5c117ac8babcc1e7abf5cd2edef02",
+      "case_id": "exploratory-82bccdfa88d571b877fa591b",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/7f765107f675-scoped-inventory-v1.json",
+          "sha256": "5bd1dc2c7a7b753005f8fc860f7fed049ad5fb44f36e0ef1aada8113a31a7966"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-fb5ecf455583480af557/campaign.json",
+          "sha256": "3d70b09c7d09b4d8dbc60b9bb6cfe435334f01dfa15400d9625bc98fc4841139"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/campaign_result.json",
+          "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/b5ac46a6/runtime_result.json",
+          "sha256": "75b7bd8249f370281c38de1fa0dd2bec9887eba3b8eb2e5ea3ee8cf65a630287"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/b5ac46a6/artifact_paths.json",
+          "sha256": "ce37b676e9cee43eea8f5719c21d2318828b4f8f98c072dce4bb9cbb174be73c"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/7f765107/b5ac46a6/operator_witness-9d73a110.json",
+          "sha256": "9d73a110bd095a91c73aa7403462cc186170665d32c1ea517978f2f989c222eb"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/campaign_result.json",
+        "sha256": "52f51f5da6286769cb9efecc9ad2e83a75058cb2851208fffb0ee94cd6ebf327",
+        "size_bytes": 144032,
+        "version_id": "LoBDeIy4DIrO.xlbrrlOeQ.OAaWunryd"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 58372,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000,
+          60000
+        ],
+        "round_durations_ms": [
+          52988.37773200012,
+          53080.95094100008,
+          54718.06567599969,
+          54031.539235999844,
+          53761.46260099995
+        ],
+        "validation_metrics": {
+          "auprc": 0.20636612633530202,
+          "auroc": 0.6356378707978843,
+          "count": 15324,
+          "f1": 0.0,
+          "loss": 0.3410296279560707,
+          "positive_count": 1745,
+          "precision": 0.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-fb5ecf455583480af557/exploratory-82bccdfa88d571b877fa591b/runtime_result.json",
+        "sha256": "75b7bd8249f370281c38de1fa0dd2bec9887eba3b8eb2e5ea3ee8cf65a630287",
+        "size_bytes": 1168146,
+        "version_id": "yMZr6FI3Y94LVDdZe7qm3VDNCKOVkGrL"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-82bccdfa88d571b877fa591b",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    },
+    {
+      "application_campaign_id": "robust-04397f8e06a4-f32bfc2e9b4a0a2d05dc",
+      "attempt_id": "exploratory-attempt-e97f7738dda81cbb9290091d71f646f2",
+      "case_id": "exploratory-37e4c6174516e8c06185b989",
+      "confidence_interval": null,
+      "confirmatory": false,
+      "data_kind": "clinical",
+      "effect": null,
+      "evidence_refs": [
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/ecc3e661ba57-scoped-inventory-v1.json",
+          "sha256": "e8169a073ed38ad37df5fc10c372438b4d66a3b543cfdfc412fdd2df006f93c7"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/exploratory-groups/group-f32bfc2e9b4a0a2d05dc/campaign.json",
+          "sha256": "78fa58e431cd171831c7b85915c3ed5924c191b3c50b425f518bbc2485794a83"
+        },
+        {
+          "path": "results/development/adapter_P10_f48f06_v1/context/containers/robustness/adapter-manifest.json",
+          "sha256": "105b9e499929defa94c61f3789b98b3689d8001bde91ae09b3a0029ea1deeede"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/operator-witness-public.pem",
+          "sha256": "e9345a97202e0bd77b959e75cbfc1d44627c79cc24b47f6a7c22ba3b867f4667"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/ecc3e661/campaign_result.json",
+          "sha256": "26f8f5d10f18f814e26baaf2f129e43537632f50677a8cd8e80af89a5a84c550"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/ecc3e661/0a6381b6/runtime_result.json",
+          "sha256": "c06da4dccbc62dce8b044bc490958520f5021cb6ace8e6fdba1ef72178d4f0e6"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/ecc3e661/0a6381b6/artifact_paths.json",
+          "sha256": "14e485d7621aa1f5af62a0ea7fc2e940dff432b21d40cca5dab29ff1cd759cf9"
+        },
+        {
+          "path": "results/aws/campaign-20261115T181929-f48f06/r/ecc3e661/0a6381b6/operator_witness-f652d26c.json",
+          "sha256": "f652d26c4b3da5d4bb901191fabe304feedc6510e603170a61d62755a77ee91d"
+        }
+      ],
+      "execution_successful": true,
+      "independent_seed_count": 1,
+      "index": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-f32bfc2e9b4a0a2d05dc/campaign_result.json",
+        "sha256": "26f8f5d10f18f814e26baaf2f129e43537632f50677a8cd8e80af89a5a84c550",
+        "size_bytes": 17688,
+        "version_id": "6MTeO672ZtXC5EqeG8kmPRZNMiL6ryYL"
+      },
+      "metrics": {
+        "accepted_updates": 35,
+        "acknowledged_tasks": 40,
+        "actual_selected_per_round": [
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-1",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-2",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-3",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-4",
+            "selected_count": 8
+          },
+          {
+            "accepted_count": 7,
+            "org_ids": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ],
+            "round_id": "round-5",
+            "selected_count": 8
+          }
+        ],
+        "assigned_tasks": 40,
+        "audit_complete_decisions": 40,
+        "configured_reply_delay_ms": 0,
+        "final_decisions": 40,
+        "final_operational_errors": 0,
+        "indeterminate_tasks": 0,
+        "oracle_invalid_incorporations": 0,
+        "oracle_invalid_presented": 5,
+        "parameter_bytes": 233484,
+        "presented_updates": 40,
+        "published_models": 5,
+        "rejected_updates": 5,
+        "reported_clock_offsets_ms": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "round_durations_ms": [
+          60698.253944999975,
+          60827.05123800002,
+          64046.353364000024,
+          64436.400349000054,
+          64915.88129700006
+        ],
+        "validation_metrics": {
+          "auprc": 0.20429104992120573,
+          "auroc": 0.6332031742086159,
+          "count": 15324,
+          "f1": 0.001145475372279496,
+          "loss": 0.34322299623700975,
+          "positive_count": 1745,
+          "precision": 1.0,
+          "prevalence": 0.11387366222918298,
+          "recall": 0.0005730659025787965,
+          "threshold": 0.5
+        }
+      },
+      "raw_result": {
+        "bucket": "pcfl-r2-f48f06-980322232249-us-east-1",
+        "key": "evidence/campaigns/robust-04397f8e06a4-f32bfc2e9b4a0a2d05dc/exploratory-37e4c6174516e8c06185b989/runtime_result.json",
+        "sha256": "c06da4dccbc62dce8b044bc490958520f5021cb6ace8e6fdba1ef72178d4f0e6",
+        "size_bytes": 1396925,
+        "version_id": "stqwjPbkrQc.Wp8Q0SXi4ScmpeR_tSXW"
+      },
+      "reason": "independently-assessed-validation-only-exploratory-case",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "run_id": "robust-37e4c6174516e8c06185b989",
+      "source_metrics_retained": true,
+      "status": "successful",
+      "verification": {
+        "audit_complete": true,
+        "evaluation_bound": true,
+        "placement8": true,
+        "protected_witness": true,
+        "schedule_bound": true,
+        "selected_subset": true,
+        "weighted_models": true
+      }
+    }
+  ],
+  "scope": "separate validation-only n=1 exploratory descriptives"
+}

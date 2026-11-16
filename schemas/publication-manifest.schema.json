@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:publication-manifest",
+  "title": "Durable or normalized runtime manifest v0.1.0",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "manifest_id",
+        "run_id",
+        "round_id",
+        "commit_order",
+        "commit_txn_id",
+        "candidate"
+      ],
+      "properties": {
+        "manifest_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "run_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "round_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "commit_order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "commit_txn_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "candidate": {
+          "$ref": "urn:pcfl:0.1.0:common#/$defs/candidate"
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": [
+        "round_id",
+        "parent_manifest_id",
+        "model_digest",
+        "model_schema_hash",
+        "included_update_ids",
+        "policy_epochs",
+        "commit_order",
+        "artifact",
+        "guarded_policy_publication",
+        "manifest_id"
+      ],
+      "properties": {
+        "round_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "parent_manifest_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "model_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "parameters_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "model_schema_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "included_update_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+          },
+          "minItems": 1,
+          "maxItems": 8,
+          "uniqueItems": true
+        },
+        "policy_epochs": {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 8,
+          "propertyNames": {
+            "type": "string",
+            "enum": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ]
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "commit_order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "artifact": {
+          "$ref": "urn:pcfl:0.1.0:common#/$defs/artifact"
+        },
+        "guarded_policy_publication": {
+          "type": "boolean"
+        },
+        "manifest_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "run_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "persistent_protocol": {
+          "const": "ddb-v1"
+        },
+        "candidate_metadata": {
+          "$ref": "urn:pcfl:0.1.0:common#/$defs/candidate"
+        },
+        "commit_txn_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "persistent_protocol"
+            ]
+          },
+          "then": {
+            "required": [
+              "run_id",
+              "candidate_metadata",
+              "commit_txn_id"
+            ],
+            "properties": {
+              "guarded_policy_publication": {
+                "const": true
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "$comment": "Durable candidate.model_digest is serialized object SHA256; normalized runtime model_digest is logical parameter digest. Never equate those hash domains. Candidate identity, guards, object confirmation and membership need semantic validation."
+}
+

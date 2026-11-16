@@ -1,0 +1,394 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:common",
+  "title": "PCFL shared export definitions v0.1.0",
+  "$defs": {
+    "nonblank": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "positive": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "nonnegative": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "org": {
+      "type": "string",
+      "enum": [
+        "org_01",
+        "org_02",
+        "org_03",
+        "org_04",
+        "org_05",
+        "org_06",
+        "org_07",
+        "org_08"
+      ]
+    },
+    "version": {
+      "const": "0.1.0"
+    },
+    "version_id": {
+      "allOf": [
+        {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        {
+          "not": {
+            "const": "null"
+          }
+        }
+      ]
+    },
+    "local_artifact": {
+      "type": "object",
+      "required": [
+        "backend",
+        "path",
+        "model_digest",
+        "file_sha256"
+      ],
+      "properties": {
+        "backend": {
+          "const": "local_immutable_checkpoint"
+        },
+        "path": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "model_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "file_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "s3_reference": {
+      "type": "object",
+      "required": [
+        "bucket",
+        "key",
+        "version_id",
+        "sha256",
+        "size_bytes"
+      ],
+      "properties": {
+        "bucket": {
+          "type": "string",
+          "pattern": "\\S",
+          "maxLength": 63
+        },
+        "key": {
+          "type": "string",
+          "pattern": "\\S",
+          "maxLength": 1024
+        },
+        "version_id": {
+          "$ref": "urn:pcfl:0.1.0:common#/$defs/version_id"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "s3_artifact": {
+      "type": "object",
+      "required": [
+        "backend",
+        "bucket",
+        "key",
+        "version_id",
+        "sha256",
+        "size_bytes"
+      ],
+      "properties": {
+        "backend": {
+          "const": "s3"
+        },
+        "bucket": {
+          "type": "string",
+          "pattern": "\\S",
+          "maxLength": 63
+        },
+        "key": {
+          "type": "string",
+          "pattern": "\\S",
+          "maxLength": 1024
+        },
+        "version_id": {
+          "$ref": "urn:pcfl:0.1.0:common#/$defs/version_id"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "model_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "parameters_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "local_export": {
+          "$ref": "urn:pcfl:0.1.0:common#/$defs/local_export"
+        }
+      },
+      "additionalProperties": false
+    },
+    "artifact": {
+      "oneOf": [
+        {
+          "$ref": "urn:pcfl:0.1.0:common#/$defs/local_artifact"
+        },
+        {
+          "$ref": "urn:pcfl:0.1.0:common#/$defs/s3_artifact"
+        }
+      ]
+    },
+    "object_confirmation": {
+      "type": "object",
+      "required": [
+        "version_id",
+        "sha256",
+        "size_bytes"
+      ],
+      "properties": {
+        "version_id": {
+          "$ref": "urn:pcfl:0.1.0:common#/$defs/version_id"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "anchor": {
+      "type": "object",
+      "required": [
+        "count",
+        "head"
+      ],
+      "properties": {
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "head": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "contributor": {
+      "type": "object",
+      "required": [
+        "update_id",
+        "task_id",
+        "org_id",
+        "purpose",
+        "start_order",
+        "sample_count",
+        "weights_digest"
+      ],
+      "properties": {
+        "update_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "task_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "org_id": {
+          "type": "string",
+          "enum": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ]
+        },
+        "purpose": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "start_order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sample_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "weights_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "local_export": {
+      "type": "object",
+      "required": ["path", "model_digest", "file_sha256"],
+      "properties": {
+        "path": {"$ref": "urn:pcfl:0.1.0:common#/$defs/nonblank"},
+        "model_digest": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+        "file_sha256": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+        "backend": {"const": "local_immutable_checkpoint"}
+      },
+      "additionalProperties": false
+    },
+    "candidate": {
+      "type": "object",
+      "required": [
+        "candidate_id",
+        "snapshot_order",
+        "parent_manifest_id",
+        "round_generation",
+        "policy_epochs",
+        "history_digests",
+        "model_schema_hash",
+        "rule_bundle_hash",
+        "model_digest",
+        "s3",
+        "object_confirmation",
+        "updates"
+      ],
+      "properties": {
+        "candidate_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "snapshot_order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "parent_manifest_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "round_generation": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "policy_epochs": {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 8,
+          "propertyNames": {
+            "type": "string",
+            "enum": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ]
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "history_digests": {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 8,
+          "propertyNames": {
+            "type": "string",
+            "enum": [
+              "org_01",
+              "org_02",
+              "org_03",
+              "org_04",
+              "org_05",
+              "org_06",
+              "org_07",
+              "org_08"
+            ]
+          },
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "model_schema_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "rule_bundle_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "model_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "s3": {
+          "$ref": "urn:pcfl:0.1.0:common#/$defs/s3_reference"
+        },
+        "object_confirmation": {
+          "$ref": "urn:pcfl:0.1.0:common#/$defs/object_confirmation"
+        },
+        "updates": {
+          "type": "array",
+          "items": {
+            "$ref": "urn:pcfl:0.1.0:common#/$defs/contributor"
+          },
+          "minItems": 1,
+          "maxItems": 8
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$comment": "All external URN references must be resolved from this versioned local schema set. No network retrieval is required."
+}
+

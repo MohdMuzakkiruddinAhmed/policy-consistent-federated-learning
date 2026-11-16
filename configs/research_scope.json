@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1.0",
+  "source": "user-statement-in-project-conversation",
+  "recorded_date": "2026-11-12",
+  "statement": "Independent project; no institutional review requirement",
+  "project_type": "independent-computational-research",
+  "institutional_determination_required_per_user": false,
+  "institutional_determination_issued": false,
+  "irb_approval_claimed": false,
+  "inputs": ["public-secondary-UCI-296", "synthetic-policies-and-organizations"],
+  "human_participant_data_collection": false
+}

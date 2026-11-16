@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:policy-version",
+  "title": "Effective policy replacement version v0.1.0",
+  "$ref": "urn:pcfl:0.1.0:policy-event",
+  "$comment": "The implemented version is its full replacement event: epoch is version and order is effective logical order. Current-row event_json/policy_hash is a storage encoding. No unimplemented wall-clock valid_from/valid_until or institution actor semantics are implied."
+}
+

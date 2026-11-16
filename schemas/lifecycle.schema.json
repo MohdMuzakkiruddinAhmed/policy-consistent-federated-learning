@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:lifecycle",
+  "title": "Public lifecycle evidence projection v0.1.0",
+  "type": "object",
+  "required": [
+    "policy_events",
+    "tasks",
+    "updates",
+    "decisions",
+    "published_manifests",
+    "audit",
+    "anchor"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "policy_events": {
+      "type": "array",
+      "items": {
+        "$ref": "urn:pcfl:0.1.0:policy-event"
+      },
+      "minItems": 0
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "$ref": "urn:pcfl:0.1.0:task-authorization"
+      },
+      "minItems": 0
+    },
+    "updates": {
+      "type": "array",
+      "items": {
+        "$ref": "urn:pcfl:0.1.0:model-update"
+      },
+      "minItems": 0
+    },
+    "decisions": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+      },
+      "additionalProperties": {
+        "$ref": "urn:pcfl:0.1.0:update-decision"
+      }
+    },
+    "published_manifests": {
+      "type": "array",
+      "items": {
+        "$ref": "urn:pcfl:0.1.0:publication-manifest"
+      },
+      "minItems": 0
+    },
+    "audit": {
+      "type": "array",
+      "items": {
+        "$ref": "urn:pcfl:0.1.0:audit-event"
+      },
+      "minItems": 0
+    },
+    "anchor": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/anchor"
+    },
+    "attempt_failures": {
+      "type": "array",
+      "items": {
+        "$ref": "urn:pcfl:0.1.0:update-decision"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Apply to the named public projection from runtime evidence. Full private runtime exports additionally contain durable storage rows and other diagnostics; they are not public-schema-conformant without projection. Cross-record identity, temporal order, finality and hash bindings require independent verification."
+}

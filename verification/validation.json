@@ -1,0 +1,62 @@
+{
+  "content_review": {
+    "credential_pattern_matches": 0,
+    "nested_archives": 0,
+    "planning_or_theory_markdown_files": 0,
+    "private_keys_or_operator_state_included": false,
+    "raw_clinical_data_or_trained_arrays_included": false
+  },
+  "focused_public_tests": {
+    "full_historical_suite_claimed": false,
+    "oracle_passed": 13,
+    "state_model_passed": 22,
+    "successful": true,
+    "total_passed": 35
+  },
+  "frozen_executable_files_preserved": 270,
+  "kind": "paper-artifact-package-validation",
+  "linux_aggregate_reproduction": {
+    "analysis_files_verified": 13,
+    "comparison_mode": "exact-bytes",
+    "generated_analysis_sha256": {
+      "analysis.json": "d13936c2d887084f2afad18216dd452eacb7ae11eb15c725e97029e6c99473f0",
+      "audit.csv": "44d2f4acc5459200a4fa6519f1d7f7a54b77c2ca0e0e01c7d567ea631ad6e063",
+      "claim_evidence_matrix.csv": "53dfad32feeb53677f38e72df5f217d44b548a79053c9a54612a3adb7e7e94c1",
+      "collaboration.csv": "32b6d0c98d9d7546af30d57350f1cda385c06ab33692fb52d9402a135e99a9f7",
+      "cost.csv": "9f689badebdeb95913cbff8ed4f8646415c5137f2296b206c74438452ad6c853",
+      "governance.csv": "521c2dc828cc5afc20b90282318fd9ee6858ce02922d3515aa915c11d79c8a33",
+      "latency.csv": "ef69a25246ddcc949468364c231dae522fa4c28eebe3878fd2f9e835e18f4947",
+      "overhead.csv": "6f89263cceaa827121131bea057af83bd0dac9808c9292d03e1441db7d5364be",
+      "paired_governance.csv": "8a8f3a3a4c7916249a84056d42da8e7a6e87eac97a60fb4164eebb1632588167",
+      "replications.csv": "0acc36b06c2e06210148c4614b9aed0fb10e77a42ccdbddf6eebf44e83572360",
+      "responsiveness.csv": "a1185db2adc832a1cd968c6ab2ecb2d096dd6f992700fa400fd66b78c420581f",
+      "responsiveness_intervals.csv": "8bbd0d96e1c3be06869c1a106948005a2763eccc0395d25fad81142685c7e955",
+      "stable_utility.csv": "c7a122a428f888b880b168903d043a554e2b74405f7ab23cbd239e0ef1d4895e"
+    },
+    "network_disabled": true,
+    "numpy": "2.4.3",
+    "original_immutable_local_image": "sha256:cad1539885b50ca4d25dcd0d441da046e20f4d67ad59b6a0d97a74eafcacd208",
+    "public_only_mounts": true,
+    "python": "3.12.10",
+    "successful": true
+  },
+  "no_training_or_cloud_execution": true,
+  "paper": {
+    "authors": 5,
+    "pages_including_references": 3,
+    "sha256": "0206217322e64e09b0e028c9546c0e7263d61ab6ea7bd1c2c58a3f4456aed08e"
+  },
+  "scope": "public source, aggregates and synthetic tests only",
+  "windows_aggregate_and_figure_reproduction": {
+    "analysis_files_verified": 13,
+    "byte_exact": false,
+    "comparison_mode": "windows-crlf-lf-canonical-text",
+    "figure_byte_identity_claimed": false,
+    "figures_generated": 7,
+    "newline_canonicalized_files": [
+      "analysis.json"
+    ],
+    "numeric_tolerance_used": false,
+    "successful": true
+  }
+}

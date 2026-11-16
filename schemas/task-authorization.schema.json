@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:task-authorization",
+  "title": "Public acknowledged task or issued-task diagnostic v0.1.0",
+  "type": "object",
+  "required": [
+    "task_id",
+    "org_id",
+    "round_id",
+    "purpose",
+    "start_order",
+    "policy_epoch",
+    "policy_hash",
+    "model_schema_hash",
+    "nonce_digest"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "update_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "org_id": {
+      "type": "string",
+      "enum": [
+        "org_01",
+        "org_02",
+        "org_03",
+        "org_04",
+        "org_05",
+        "org_06",
+        "org_07",
+        "org_08"
+      ]
+    },
+    "node_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "round_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "purpose": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "issue_order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "start_order": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "policy_epoch": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "policy_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "model_schema_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "nonce_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Export only nonce_digest, never the bearer nonce. Null start_order denotes an unacknowledged issue and cannot authorize receipt/publication; semantic checks bind source identity and acknowledgment."
+}
+

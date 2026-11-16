@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:authorization-decision",
+  "title": "Native attributable OPA result v0.1.0",
+  "type": "object",
+  "required": [
+    "valid",
+    "reason",
+    "invalid_order",
+    "rule_hash",
+    "protocol_revision",
+    "query",
+    "request_binding",
+    "request_hash",
+    "history_digest",
+    "decision_id",
+    "opa_version"
+  ],
+  "properties": {
+    "valid": {
+      "type": "boolean"
+    },
+    "reason": {
+      "enum": [
+        "continuous_authorization",
+        "authorization_interrupted",
+        "missing_start_policy",
+        "malformed_history_or_query",
+        "policy_metadata_missing"
+      ]
+    },
+    "invalid_order": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "rule_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "protocol_revision": {
+      "const": "pcfl-interval-v1"
+    },
+    "query": {
+      "$ref": "urn:pcfl:0.1.0:interval-query"
+    },
+    "request_binding": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "request_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "history_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "decision_id": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "opa_version": {
+      "const": "1.22.3"
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [{
+    "if": {"properties": {"valid": {"const": true}}, "required": ["valid"]},
+    "then": {"properties": {"reason": {"const": "continuous_authorization"}, "invalid_order": {"type": "null"}}},
+    "else": {"properties": {"reason": {"enum": ["authorization_interrupted", "missing_start_policy", "malformed_history_or_query", "policy_metadata_missing"]}}}
+  }],
+  "$comment": "A response must additionally match the caller's expected rule hash, exact query, request/hash/history binding and reason/allow coherence. Structural validity alone grants no permission."
+}
+

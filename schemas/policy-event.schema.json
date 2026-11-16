@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:policy-event",
+  "title": "Authority full replacement policy event v0.1.0",
+  "type": "object",
+  "required": [
+    "event_id",
+    "org_id",
+    "order",
+    "epoch",
+    "kind",
+    "rules"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "org_id": {
+      "type": "string",
+      "enum": [
+        "org_01",
+        "org_02",
+        "org_03",
+        "org_04",
+        "org_05",
+        "org_06",
+        "org_07",
+        "org_08"
+      ]
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "epoch": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "kind": {
+      "enum": [
+        "GRANT",
+        "CHANGE",
+        "REVOKE",
+        "EXPIRE"
+      ]
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "purpose",
+          "action",
+          "effect"
+        ],
+        "properties": {
+          "purpose": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "action": {
+            "enum": [
+              "train",
+              "submit_update",
+              "aggregate"
+            ]
+          },
+          "effect": {
+            "enum": [
+              "allow",
+              "deny"
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "client_timestamp": {
+      "type": "string",
+      "pattern": "\\S"
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "enum": [
+              "REVOKE",
+              "EXPIRE"
+            ]
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "rules": {
+            "maxItems": 0
+          }
+        }
+      }
+    }
+  ],
+  "$comment": "Public export shape. Only the known diagnostic client_timestamp is permitted; authority order governs semantics. Global identity/order uniqueness, contiguous epochs, complete history and exact native integer decoding require semantic checks."
+}
+

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:final-holdout-expectation",
+  "title": "Coordinator expected final-test response bindings v0.1.0",
+  "type": "object",
+  "required": ["plan_digest", "authorization_digest", "test_sha256", "cell_id"],
+  "properties": {
+    "plan_digest": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+    "authorization_digest": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+    "test_sha256": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+    "cell_id": {"$ref": "urn:pcfl:0.1.0:common#/$defs/id"}
+  },
+  "additionalProperties": false,
+  "$comment": "This four-field coordinator configuration binds a received response. It grants no test-file access and cannot substitute for the evaluator's independently trusted accepted plan and operator authorization."
+}

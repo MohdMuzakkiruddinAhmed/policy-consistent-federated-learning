@@ -1,0 +1,5987 @@
+{
+  "confidence_interval": null,
+  "confirmatory": false,
+  "effect": null,
+  "rows": [
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-1c070af24225ff8ccd639bb1e60e1c27"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-52d0a37d48b5b2d008c3fc91",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "non_iid_alpha",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          0.5
+        ],
+        [
+          "revocations_per_round",
+          1
+        ],
+        [
+          "participation_fraction",
+          1.0
+        ],
+        [
+          "update_size_multiplier",
+          1
+        ],
+        [
+          "artificial_latency_ms",
+          0
+        ],
+        [
+          "client_clock_skew_ms",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-52d0a37d48b5b2d008c3fc91",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 0.5,
+      "mean_round_duration_ms": 51036.976045800024,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-52d0a37d48b5b2d008c3fc91"
+      ],
+      "seed": 296,
+      "shared_default_control": true,
+      "status": "successful",
+      "validation_auprc": 0.20636612633530202,
+      "validation_auroc": 0.6356378707978843,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3410296279560707,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-1c070af24225ff8ccd639bb1e60e1c27"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-52d0a37d48b5b2d008c3fc91",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "revocations_per_round",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          0.5
+        ],
+        [
+          "revocations_per_round",
+          1
+        ],
+        [
+          "participation_fraction",
+          1.0
+        ],
+        [
+          "update_size_multiplier",
+          1
+        ],
+        [
+          "artificial_latency_ms",
+          0
+        ],
+        [
+          "client_clock_skew_ms",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-52d0a37d48b5b2d008c3fc91",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 1,
+      "mean_round_duration_ms": 51036.976045800024,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-52d0a37d48b5b2d008c3fc91"
+      ],
+      "seed": 296,
+      "shared_default_control": true,
+      "status": "successful",
+      "validation_auprc": 0.20636612633530202,
+      "validation_auroc": 0.6356378707978843,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3410296279560707,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-1c070af24225ff8ccd639bb1e60e1c27"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-52d0a37d48b5b2d008c3fc91",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "participation_fraction",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          0.5
+        ],
+        [
+          "revocations_per_round",
+          1
+        ],
+        [
+          "participation_fraction",
+          1.0
+        ],
+        [
+          "update_size_multiplier",
+          1
+        ],
+        [
+          "artificial_latency_ms",
+          0
+        ],
+        [
+          "client_clock_skew_ms",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-52d0a37d48b5b2d008c3fc91",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 1.0,
+      "mean_round_duration_ms": 51036.976045800024,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-52d0a37d48b5b2d008c3fc91"
+      ],
+      "seed": 296,
+      "shared_default_control": true,
+      "status": "successful",
+      "validation_auprc": 0.20636612633530202,
+      "validation_auroc": 0.6356378707978843,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3410296279560707,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-1c070af24225ff8ccd639bb1e60e1c27"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-52d0a37d48b5b2d008c3fc91",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "update_size_multiplier",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          0.5
+        ],
+        [
+          "revocations_per_round",
+          1
+        ],
+        [
+          "participation_fraction",
+          1.0
+        ],
+        [
+          "update_size_multiplier",
+          1
+        ],
+        [
+          "artificial_latency_ms",
+          0
+        ],
+        [
+          "client_clock_skew_ms",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-52d0a37d48b5b2d008c3fc91",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 1,
+      "mean_round_duration_ms": 51036.976045800024,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-52d0a37d48b5b2d008c3fc91"
+      ],
+      "seed": 296,
+      "shared_default_control": true,
+      "status": "successful",
+      "validation_auprc": 0.20636612633530202,
+      "validation_auroc": 0.6356378707978843,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3410296279560707,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-1c070af24225ff8ccd639bb1e60e1c27"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-52d0a37d48b5b2d008c3fc91",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "artificial_latency_ms",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          0.5
+        ],
+        [
+          "revocations_per_round",
+          1
+        ],
+        [
+          "participation_fraction",
+          1.0
+        ],
+        [
+          "update_size_multiplier",
+          1
+        ],
+        [
+          "artificial_latency_ms",
+          0
+        ],
+        [
+          "client_clock_skew_ms",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-52d0a37d48b5b2d008c3fc91",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 0,
+      "mean_round_duration_ms": 51036.976045800024,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-52d0a37d48b5b2d008c3fc91"
+      ],
+      "seed": 296,
+      "shared_default_control": true,
+      "status": "successful",
+      "validation_auprc": 0.20636612633530202,
+      "validation_auroc": 0.6356378707978843,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3410296279560707,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-1c070af24225ff8ccd639bb1e60e1c27"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-52d0a37d48b5b2d008c3fc91",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "client_clock_skew_ms",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          0.5
+        ],
+        [
+          "revocations_per_round",
+          1
+        ],
+        [
+          "participation_fraction",
+          1.0
+        ],
+        [
+          "update_size_multiplier",
+          1
+        ],
+        [
+          "artificial_latency_ms",
+          0
+        ],
+        [
+          "client_clock_skew_ms",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-52d0a37d48b5b2d008c3fc91",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 0,
+      "mean_round_duration_ms": 51036.976045800024,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-52d0a37d48b5b2d008c3fc91"
+      ],
+      "seed": 296,
+      "shared_default_control": true,
+      "status": "successful",
+      "validation_auprc": 0.20636612633530202,
+      "validation_auroc": 0.6356378707978843,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3410296279560707,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 40,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 8,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 8,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 8,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 8,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 8,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-c8dc1f542b6fb16d3f4adf37956cf527"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-ba5afa8bd2ca72cfda8cdc9e",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "revocations_per_round",
+      "factor_levels": [
+        [
+          "revocations_per_round",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 0,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-ba5afa8bd2ca72cfda8cdc9e",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 0,
+      "mean_round_duration_ms": 50358.66169280002,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 0,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 0,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-ba5afa8bd2ca72cfda8cdc9e"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20569372572560052,
+      "validation_auroc": 0.6359236652078013,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3409814618020293,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 20,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 4,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 4,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 4,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 4,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 4,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-a6ad4f377a53f8d62ead207a5f1e4202"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-4436c67e8650a98c6e90b5df",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "revocations_per_round",
+      "factor_levels": [
+        [
+          "revocations_per_round",
+          4
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 4,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-4436c67e8650a98c6e90b5df",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 4,
+      "mean_round_duration_ms": 51595.488810999996,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 20,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 20,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-4436c67e8650a98c6e90b5df"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.2066173473538595,
+      "validation_auroc": 0.6364513635689357,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3408478667424261,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 15,
+      "acknowledged_tasks": 20,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 3,
+          "org_ids": [
+            "org_01",
+            "org_04",
+            "org_05",
+            "org_07"
+          ],
+          "round_id": "round-1",
+          "selected_count": 4
+        },
+        {
+          "accepted_count": 3,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_04",
+            "org_06"
+          ],
+          "round_id": "round-2",
+          "selected_count": 4
+        },
+        {
+          "accepted_count": 3,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_06",
+            "org_07"
+          ],
+          "round_id": "round-3",
+          "selected_count": 4
+        },
+        {
+          "accepted_count": 3,
+          "org_ids": [
+            "org_02",
+            "org_04",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 4
+        },
+        {
+          "accepted_count": 3,
+          "org_ids": [
+            "org_02",
+            "org_04",
+            "org_06",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 4
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 20,
+      "attempt_ids": [
+        "exploratory-attempt-9e8a356ca6042548b4699a1720b54728"
+      ],
+      "audit_complete_decisions": 20,
+      "case_id": "exploratory-8aa3ad55aedba0708075f812",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "participation_fraction",
+      "factor_levels": [
+        [
+          "participation_fraction",
+          0.5
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 0.5,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 20,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-8aa3ad55aedba0708075f812",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 0.5,
+      "mean_round_duration_ms": 47733.75186859998,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 20,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-8aa3ad55aedba0708075f812"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20469355168647024,
+      "validation_auroc": 0.6352489549112053,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34094700505857334,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 25,
+      "acknowledged_tasks": 30,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 5,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_04",
+            "org_05",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 6
+        },
+        {
+          "accepted_count": 5,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_04",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 6
+        },
+        {
+          "accepted_count": 5,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_05",
+            "org_06",
+            "org_07"
+          ],
+          "round_id": "round-3",
+          "selected_count": 6
+        },
+        {
+          "accepted_count": 5,
+          "org_ids": [
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 6
+        },
+        {
+          "accepted_count": 5,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 6
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 30,
+      "attempt_ids": [
+        "exploratory-attempt-fd09d746a9d5427874277d3b17021512"
+      ],
+      "audit_complete_decisions": 30,
+      "case_id": "exploratory-79052fb3106723e73016f6bf",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "participation_fraction",
+      "factor_levels": [
+        [
+          "participation_fraction",
+          0.75
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 0.75,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 30,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-79052fb3106723e73016f6bf",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 0.75,
+      "mean_round_duration_ms": 49338.16581920005,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 30,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-79052fb3106723e73016f6bf"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20565582661030057,
+      "validation_auroc": 0.6351957377300319,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3411603413310259,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-d719f80e469b2a078d50654b09c40ba9"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-a48a796ffed75cb44583d34d",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "update_size_multiplier",
+      "factor_levels": [
+        [
+          "update_size_multiplier",
+          4
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 4
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-d5e933ce6105e3a3c1b0",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-a48a796ffed75cb44583d34d",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 4,
+      "mean_round_duration_ms": 55302.5414804,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 233484,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-a48a796ffed75cb44583d34d"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.2054598109160059,
+      "validation_auroc": 0.6350131492016051,
+      "validation_count": 15324,
+      "validation_f1": 0.005707762557077625,
+      "validation_loss": 0.34222400757887445,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.7142857142857143,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0028653295128939827,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-749119a55503313c6347f79724499fde"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-1a1e7f7a3a25104db8ccb475",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 250,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "artificial_latency_ms",
+      "factor_levels": [
+        [
+          "artificial_latency_ms",
+          250
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 250,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-1a1e7f7a3a25104db8ccb475",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 250,
+      "mean_round_duration_ms": 52591.01131160006,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-1a1e7f7a3a25104db8ccb475"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20636612633530202,
+      "validation_auroc": 0.6356378707978843,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3410296279560707,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-5ba13d7813005ccaec8406f50a7763d9"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-48c45538e3b6da37d3998986",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 1000,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "artificial_latency_ms",
+      "factor_levels": [
+        [
+          "artificial_latency_ms",
+          1000
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 1000,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-48c45538e3b6da37d3998986",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 1000,
+      "mean_round_duration_ms": 52792.15305679994,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-48c45538e3b6da37d3998986"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20636612633530202,
+      "validation_auroc": 0.6356378707978843,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3410296279560707,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-a3c1664863e1642610bf26f036a530e0"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-b762ed1ba80c86de1d320bac",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "client_clock_skew_ms",
+      "factor_levels": [
+        [
+          "client_clock_skew_ms",
+          -60000
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": -60000,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-b762ed1ba80c86de1d320bac",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": -60000,
+      "mean_round_duration_ms": 53286.20111620003,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000
+      ],
+      "run_ids": [
+        "robust-b762ed1ba80c86de1d320bac"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20636612633530202,
+      "validation_auroc": 0.6356378707978843,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3410296279560707,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-dfe5c117ac8babcc1e7abf5cd2edef02"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-82bccdfa88d571b877fa591b",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "iid",
+      "effect": null,
+      "factor": "client_clock_skew_ms",
+      "factor_levels": [
+        [
+          "client_clock_skew_ms",
+          60000
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 60000,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-fb5ecf455583480af557",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-82bccdfa88d571b877fa591b",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 60000,
+      "mean_round_duration_ms": 53716.079237199934,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000
+      ],
+      "run_ids": [
+        "robust-82bccdfa88d571b877fa591b"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20636612633530202,
+      "validation_auroc": 0.6356378707978843,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3410296279560707,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-505a5638ada6a07881994df53079ec26"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-b353622e03a216be65ef158f",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "non_iid_alpha",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          0.5
+        ],
+        [
+          "revocations_per_round",
+          1
+        ],
+        [
+          "participation_fraction",
+          1.0
+        ],
+        [
+          "update_size_multiplier",
+          1
+        ],
+        [
+          "artificial_latency_ms",
+          0
+        ],
+        [
+          "client_clock_skew_ms",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-b353622e03a216be65ef158f",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 0.5,
+      "mean_round_duration_ms": 60294.9245782,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-b353622e03a216be65ef158f"
+      ],
+      "seed": 296,
+      "shared_default_control": true,
+      "status": "successful",
+      "validation_auprc": 0.20519935966192396,
+      "validation_auroc": 0.6333925784188504,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34630120500700495,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-505a5638ada6a07881994df53079ec26"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-b353622e03a216be65ef158f",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "revocations_per_round",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          0.5
+        ],
+        [
+          "revocations_per_round",
+          1
+        ],
+        [
+          "participation_fraction",
+          1.0
+        ],
+        [
+          "update_size_multiplier",
+          1
+        ],
+        [
+          "artificial_latency_ms",
+          0
+        ],
+        [
+          "client_clock_skew_ms",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-b353622e03a216be65ef158f",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 1,
+      "mean_round_duration_ms": 60294.9245782,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-b353622e03a216be65ef158f"
+      ],
+      "seed": 296,
+      "shared_default_control": true,
+      "status": "successful",
+      "validation_auprc": 0.20519935966192396,
+      "validation_auroc": 0.6333925784188504,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34630120500700495,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-505a5638ada6a07881994df53079ec26"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-b353622e03a216be65ef158f",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "participation_fraction",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          0.5
+        ],
+        [
+          "revocations_per_round",
+          1
+        ],
+        [
+          "participation_fraction",
+          1.0
+        ],
+        [
+          "update_size_multiplier",
+          1
+        ],
+        [
+          "artificial_latency_ms",
+          0
+        ],
+        [
+          "client_clock_skew_ms",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-b353622e03a216be65ef158f",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 1.0,
+      "mean_round_duration_ms": 60294.9245782,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-b353622e03a216be65ef158f"
+      ],
+      "seed": 296,
+      "shared_default_control": true,
+      "status": "successful",
+      "validation_auprc": 0.20519935966192396,
+      "validation_auroc": 0.6333925784188504,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34630120500700495,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-505a5638ada6a07881994df53079ec26"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-b353622e03a216be65ef158f",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "update_size_multiplier",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          0.5
+        ],
+        [
+          "revocations_per_round",
+          1
+        ],
+        [
+          "participation_fraction",
+          1.0
+        ],
+        [
+          "update_size_multiplier",
+          1
+        ],
+        [
+          "artificial_latency_ms",
+          0
+        ],
+        [
+          "client_clock_skew_ms",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-b353622e03a216be65ef158f",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 1,
+      "mean_round_duration_ms": 60294.9245782,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-b353622e03a216be65ef158f"
+      ],
+      "seed": 296,
+      "shared_default_control": true,
+      "status": "successful",
+      "validation_auprc": 0.20519935966192396,
+      "validation_auroc": 0.6333925784188504,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34630120500700495,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-505a5638ada6a07881994df53079ec26"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-b353622e03a216be65ef158f",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "artificial_latency_ms",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          0.5
+        ],
+        [
+          "revocations_per_round",
+          1
+        ],
+        [
+          "participation_fraction",
+          1.0
+        ],
+        [
+          "update_size_multiplier",
+          1
+        ],
+        [
+          "artificial_latency_ms",
+          0
+        ],
+        [
+          "client_clock_skew_ms",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-b353622e03a216be65ef158f",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 0,
+      "mean_round_duration_ms": 60294.9245782,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-b353622e03a216be65ef158f"
+      ],
+      "seed": 296,
+      "shared_default_control": true,
+      "status": "successful",
+      "validation_auprc": 0.20519935966192396,
+      "validation_auroc": 0.6333925784188504,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34630120500700495,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-505a5638ada6a07881994df53079ec26"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-b353622e03a216be65ef158f",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "client_clock_skew_ms",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          0.5
+        ],
+        [
+          "revocations_per_round",
+          1
+        ],
+        [
+          "participation_fraction",
+          1.0
+        ],
+        [
+          "update_size_multiplier",
+          1
+        ],
+        [
+          "artificial_latency_ms",
+          0
+        ],
+        [
+          "client_clock_skew_ms",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-b353622e03a216be65ef158f",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 0,
+      "mean_round_duration_ms": 60294.9245782,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-b353622e03a216be65ef158f"
+      ],
+      "seed": 296,
+      "shared_default_control": true,
+      "status": "successful",
+      "validation_auprc": 0.20519935966192396,
+      "validation_auroc": 0.6333925784188504,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34630120500700495,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-d52c9fa24bae09ab0574220fe58b07a7"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-e0be4aa540d98ca93ce96478",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "non_iid_alpha",
+      "factor_levels": [
+        [
+          "non_iid_alpha",
+          1.0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 1.0,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-bcbd0684233bebb9c3a3",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-e0be4aa540d98ca93ce96478",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 1.0,
+      "mean_round_duration_ms": 61292.444211199996,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-e0be4aa540d98ca93ce96478"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20678305830865729,
+      "validation_auroc": 0.6373835082867507,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34451266661912583,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 40,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 8,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 8,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 8,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 8,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 8,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-6facffd712e3280445408f3d5436673a"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-f00bbadf83f35bbc074e539c",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "revocations_per_round",
+      "factor_levels": [
+        [
+          "revocations_per_round",
+          0
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 0,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-f00bbadf83f35bbc074e539c",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 0,
+      "mean_round_duration_ms": 60359.81974939998,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 0,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 0,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-f00bbadf83f35bbc074e539c"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.2058835807298925,
+      "validation_auroc": 0.632624094469148,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34300370142933473,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 20,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 4,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 4,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 4,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 4,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 4,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-bf6958551d846722ebc1698f0909b8b7"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-514c39c41843486eef363e5d",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "revocations_per_round",
+      "factor_levels": [
+        [
+          "revocations_per_round",
+          4
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 4,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-514c39c41843486eef363e5d",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 4,
+      "mean_round_duration_ms": 61438.2840344,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 20,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 20,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-514c39c41843486eef363e5d"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20556796122450463,
+      "validation_auroc": 0.6348780172316473,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3471970146177208,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 15,
+      "acknowledged_tasks": 20,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 3,
+          "org_ids": [
+            "org_01",
+            "org_04",
+            "org_05",
+            "org_07"
+          ],
+          "round_id": "round-1",
+          "selected_count": 4
+        },
+        {
+          "accepted_count": 3,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_04",
+            "org_06"
+          ],
+          "round_id": "round-2",
+          "selected_count": 4
+        },
+        {
+          "accepted_count": 3,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_06",
+            "org_07"
+          ],
+          "round_id": "round-3",
+          "selected_count": 4
+        },
+        {
+          "accepted_count": 3,
+          "org_ids": [
+            "org_02",
+            "org_04",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 4
+        },
+        {
+          "accepted_count": 3,
+          "org_ids": [
+            "org_02",
+            "org_04",
+            "org_06",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 4
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 20,
+      "attempt_ids": [
+        "exploratory-attempt-51dba23eb0fca1162b154fbbb13bb8fb"
+      ],
+      "audit_complete_decisions": 20,
+      "case_id": "exploratory-ed28a908d505ce5db693d101",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "participation_fraction",
+      "factor_levels": [
+        [
+          "participation_fraction",
+          0.5
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 0.5,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 20,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-ed28a908d505ce5db693d101",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 0.5,
+      "mean_round_duration_ms": 54055.535035600034,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 20,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-ed28a908d505ce5db693d101"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20591147892493716,
+      "validation_auroc": 0.6325002727327782,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3472178555505763,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 25,
+      "acknowledged_tasks": 30,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 5,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_04",
+            "org_05",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 6
+        },
+        {
+          "accepted_count": 5,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_04",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 6
+        },
+        {
+          "accepted_count": 5,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_05",
+            "org_06",
+            "org_07"
+          ],
+          "round_id": "round-3",
+          "selected_count": 6
+        },
+        {
+          "accepted_count": 5,
+          "org_ids": [
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 6
+        },
+        {
+          "accepted_count": 5,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 6
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 30,
+      "attempt_ids": [
+        "exploratory-attempt-6c3cc431c0d88cc5b1ca49a09d42c300"
+      ],
+      "audit_complete_decisions": 30,
+      "case_id": "exploratory-44e13456f5fb1f9388fbfe25",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "participation_fraction",
+      "factor_levels": [
+        [
+          "participation_fraction",
+          0.75
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 0.75,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 30,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-44e13456f5fb1f9388fbfe25",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 0.75,
+      "mean_round_duration_ms": 57884.11649179998,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 30,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-44e13456f5fb1f9388fbfe25"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20459852694495773,
+      "validation_auroc": 0.6337098557924117,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.3524083053122859,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-e97f7738dda81cbb9290091d71f646f2"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-37e4c6174516e8c06185b989",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "update_size_multiplier",
+      "factor_levels": [
+        [
+          "update_size_multiplier",
+          4
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 4
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-f32bfc2e9b4a0a2d05dc",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-37e4c6174516e8c06185b989",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 4,
+      "mean_round_duration_ms": 62984.788038600025,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 233484,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-37e4c6174516e8c06185b989"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20429104992120573,
+      "validation_auroc": 0.6332031742086159,
+      "validation_count": 15324,
+      "validation_f1": 0.001145475372279496,
+      "validation_loss": 0.34322299623700975,
+      "validation_positive_count": 1745,
+      "validation_precision": 1.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0005730659025787965,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-274b8e9be844381cd08febfd165da80a"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-d29b000de5b9318e83e6baa4",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 250,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "artificial_latency_ms",
+      "factor_levels": [
+        [
+          "artificial_latency_ms",
+          250
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 250,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-d29b000de5b9318e83e6baa4",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 250,
+      "mean_round_duration_ms": 60552.85987700004,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-d29b000de5b9318e83e6baa4"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20519935966192396,
+      "validation_auroc": 0.6333925784188504,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34630120500700495,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-8423752328f489f86cc4dc5314eb163e"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-558801139480228c0d4d7758",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 1000,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "artificial_latency_ms",
+      "factor_levels": [
+        [
+          "artificial_latency_ms",
+          1000
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 1000,
+        "client_clock_skew_ms": 0,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-558801139480228c0d4d7758",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 1000,
+      "mean_round_duration_ms": 62369.51598839996,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "run_ids": [
+        "robust-558801139480228c0d4d7758"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20519935966192396,
+      "validation_auroc": 0.6333925784188504,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34630120500700495,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-c2b32a5daa634a8095ae31851fac57e9"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-e801637d34dfcf619dd030fb",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "client_clock_skew_ms",
+      "factor_levels": [
+        [
+          "client_clock_skew_ms",
+          -60000
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": -60000,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-e801637d34dfcf619dd030fb",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": -60000,
+      "mean_round_duration_ms": 60733.57983260002,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000,
+        -60000
+      ],
+      "run_ids": [
+        "robust-e801637d34dfcf619dd030fb"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20519935966192396,
+      "validation_auroc": 0.6333925784188504,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34630120500700495,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    },
+    {
+      "accepted_updates": 35,
+      "acknowledged_tasks": 40,
+      "actual_selected_per_round": [
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-1",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-2",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-3",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-4",
+          "selected_count": 8
+        },
+        {
+          "accepted_count": 7,
+          "org_ids": [
+            "org_01",
+            "org_02",
+            "org_03",
+            "org_04",
+            "org_05",
+            "org_06",
+            "org_07",
+            "org_08"
+          ],
+          "round_id": "round-5",
+          "selected_count": 8
+        }
+      ],
+      "adapter_image": "980322232249.dkr.ecr.us-east-1.amazonaws.com/pcfl-r2-f48f06/coordinator@sha256:bf763e47548c4b5e7b83335808d420f08ffcd5868542e9d313f38cdb4a3ecf46",
+      "adapter_source_sha256": "e70c678e61728fa5ee7db1e493a3f8e64d149d870bc7d50f09c624a570ee43f6",
+      "assigned_tasks": 40,
+      "attempt_ids": [
+        "exploratory-attempt-b2f8ddc0abf1bdf66aee5b1928560274"
+      ],
+      "audit_complete_decisions": 40,
+      "case_id": "exploratory-4cd1cae942cf6973b7956f88",
+      "clinical_metric_status": "verified-descriptive",
+      "confidence_interval": null,
+      "configured_reply_delay_ms": 0,
+      "confirmatory": false,
+      "control_reuse": "same case may reference several OFAT axes; never additional independent trials",
+      "data_kind": "clinical",
+      "distribution": "non_iid",
+      "effect": null,
+      "factor": "client_clock_skew_ms",
+      "factor_levels": [
+        [
+          "client_clock_skew_ms",
+          60000
+        ]
+      ],
+      "factors": {
+        "artificial_latency_ms": 0,
+        "client_clock_skew_ms": 60000,
+        "non_iid_alpha": 0.5,
+        "participation_fraction": 1.0,
+        "revocations_per_round": 1,
+        "update_size_multiplier": 1
+      },
+      "final_decisions": 40,
+      "final_operational_errors": 0,
+      "group_id": "group-c25bb38642c8fe13768d",
+      "independent_observation_id": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c:exploratory-4cd1cae942cf6973b7956f88",
+      "independent_seed_count": 1,
+      "indeterminate_tasks": 0,
+      "level": 60000,
+      "mean_round_duration_ms": 62434.089886400034,
+      "observed_round_count": 5,
+      "oracle_invalid_incorporations": 0,
+      "oracle_invalid_presented": 5,
+      "parameter_bytes": 58372,
+      "presented_updates": 40,
+      "published_models": 5,
+      "reference_main_plan_digest": "11d134cc9d16fa4da242e7afc09ae66c00fb5f78d62ce09b302729a9706919ee",
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "rejected_updates": 5,
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "reported_clock_offsets_ms": [
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000,
+        60000
+      ],
+      "run_ids": [
+        "robust-4cd1cae942cf6973b7956f88"
+      ],
+      "seed": 296,
+      "shared_default_control": false,
+      "status": "successful",
+      "validation_auprc": 0.20519935966192396,
+      "validation_auroc": 0.6333925784188504,
+      "validation_count": 15324,
+      "validation_f1": 0.0,
+      "validation_loss": 0.34630120500700495,
+      "validation_positive_count": 1745,
+      "validation_precision": 0.0,
+      "validation_prevalence": 0.11387366222918298,
+      "validation_recall": 0.0,
+      "validation_threshold": 0.5
+    }
+  ],
+  "scope": "separate validation-only n=1 exploratory descriptives"
+}

@@ -1,0 +1,879 @@
+{
+  "pcfl_testdata": {
+    "traces": [
+      {
+        "id": "stable",
+        "description": "All lifecycle actions remain authorized.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": true
+      },
+      {
+        "id": "mid_round_revoke",
+        "description": "An authoritative revoke during training invalidates the update.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          },
+          {
+            "event_id": "org_01_event_2",
+            "org_id": "org_01",
+            "order": 5,
+            "epoch": 2,
+            "kind": "REVOKE",
+            "rules": []
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": false
+      },
+      {
+        "id": "revoke_regrant",
+        "description": "A restored permission does not rehabilitate an old update lifecycle.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          },
+          {
+            "event_id": "org_01_event_2",
+            "org_id": "org_01",
+            "order": 5,
+            "epoch": 2,
+            "kind": "REVOKE",
+            "rules": []
+          },
+          {
+            "event_id": "org_01_event_3",
+            "org_id": "org_01",
+            "order": 7,
+            "epoch": 3,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": false
+      },
+      {
+        "id": "new_lifecycle_after_regrant",
+        "description": "A new lifecycle may start after a new grant.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          },
+          {
+            "event_id": "org_01_event_2",
+            "org_id": "org_01",
+            "order": 5,
+            "epoch": 2,
+            "kind": "REVOKE",
+            "rules": []
+          },
+          {
+            "event_id": "org_01_event_3",
+            "org_id": "org_01",
+            "order": 7,
+            "epoch": 3,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 8,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": true
+      },
+      {
+        "id": "purpose_restriction",
+        "description": "A replacement policy authorizing another purpose denies the bound purpose.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          },
+          {
+            "event_id": "org_01_event_2",
+            "org_id": "org_01",
+            "order": 5,
+            "epoch": 2,
+            "kind": "CHANGE",
+            "rules": [
+              {
+                "purpose": "other_research",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "other_research",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "other_research",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": false
+      },
+      {
+        "id": "unrelated_purpose_change",
+        "description": "Another-purpose rules can change without invalidating this lifecycle.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          },
+          {
+            "event_id": "org_01_event_2",
+            "org_id": "org_01",
+            "order": 5,
+            "epoch": 2,
+            "kind": "CHANGE",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              },
+              {
+                "purpose": "other_research",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "other_research",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "other_research",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": true
+      },
+      {
+        "id": "explicit_expiry",
+        "description": "EXPIRE is an explicit authoritative transition with no permissions.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          },
+          {
+            "event_id": "org_01_event_2",
+            "org_id": "org_01",
+            "order": 5,
+            "epoch": 2,
+            "kind": "EXPIRE",
+            "rules": []
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": false
+      },
+      {
+        "id": "future_revocation",
+        "description": "Revocation after committed publication does not remove prior influence.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          },
+          {
+            "event_id": "org_01_event_2",
+            "org_id": "org_01",
+            "order": 11,
+            "epoch": 2,
+            "kind": "REVOKE",
+            "rules": []
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": true
+      },
+      {
+        "id": "default_deny",
+        "description": "The requested purpose has no matching allows.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "other_research",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "other_research",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "other_research",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": false
+      },
+      {
+        "id": "deny_overrides",
+        "description": "A matching deny overrides a matching allow.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "deny"
+              }
+            ]
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": false
+      },
+      {
+        "id": "missing_initial_state",
+        "description": "A grant after lifecycle start cannot establish earlier permission.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 3,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": false
+      },
+      {
+        "id": "missing_action",
+        "description": "All three lifecycle permissions are required.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              }
+            ]
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": false
+      },
+      {
+        "id": "initially_revoked",
+        "description": "A lifecycle initiated while revoked is invalid.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          },
+          {
+            "event_id": "org_01_event_2",
+            "org_id": "org_01",
+            "order": 2,
+            "epoch": 2,
+            "kind": "REVOKE",
+            "rules": []
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 3,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": false
+      },
+      {
+        "id": "revoke_at_start",
+        "description": "The interval includes the start boundary.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          },
+          {
+            "event_id": "org_01_event_2",
+            "org_id": "org_01",
+            "order": 2,
+            "epoch": 2,
+            "kind": "REVOKE",
+            "rules": []
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": false
+      },
+      {
+        "id": "client_clock_skew",
+        "description": "Diagnostic client clocks do not change authoritative logical order.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ],
+            "client_timestamp": "1900-01-01T00:00:00Z"
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ],
+          "client_timestamp": "2999-01-01T00:00:00Z"
+        },
+        "expected_valid": true
+      },
+      {
+        "id": "multiple_organizations",
+        "description": "Other organizational policies do not alter this organization permission.",
+        "events": [
+          {
+            "event_id": "org_01_event_1",
+            "org_id": "org_01",
+            "order": 1,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          },
+          {
+            "event_id": "org_02_event_1",
+            "org_id": "org_02",
+            "order": 3,
+            "epoch": 1,
+            "kind": "GRANT",
+            "rules": [
+              {
+                "purpose": "readmission",
+                "action": "train",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "submit_update",
+                "effect": "allow"
+              },
+              {
+                "purpose": "readmission",
+                "action": "aggregate",
+                "effect": "allow"
+              }
+            ]
+          },
+          {
+            "event_id": "org_02_event_2",
+            "org_id": "org_02",
+            "order": 5,
+            "epoch": 2,
+            "kind": "REVOKE",
+            "rules": []
+          }
+        ],
+        "query": {
+          "org_id": "org_01",
+          "purpose": "readmission",
+          "start_order": 2,
+          "commit_order": 10,
+          "actions": [
+            "train",
+            "submit_update",
+            "aggregate"
+          ]
+        },
+        "expected_valid": true
+      }
+    ]
+  }
+}

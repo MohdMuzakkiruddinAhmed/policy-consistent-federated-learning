@@ -1,0 +1,5 @@
+accepted_clients,accepted_updates,baseline_id
+"{""attempts_missing_counts"": 0, ""denominator"": 320, ""numerator"": 320, ""rate"": 1.0}","{""attempts_missing_counts"": 0, ""denominator"": 1600, ""numerator"": 1600, ""rate"": 1.0}",B1
+"{""attempts_missing_counts"": 0, ""denominator"": 320, ""numerator"": 320, ""rate"": 1.0}","{""attempts_missing_counts"": 0, ""denominator"": 1600, ""numerator"": 1600, ""rate"": 1.0}",B2
+"{""attempts_missing_counts"": 0, ""denominator"": 352, ""numerator"": 352, ""rate"": 1.0}","{""attempts_missing_counts"": 0, ""denominator"": 1624, ""numerator"": 1624, ""rate"": 1.0}",B3
+"{""attempts_missing_counts"": 0, ""denominator"": 752, ""numerator"": 708, ""rate"": 0.9414893617021277}","{""attempts_missing_counts"": 0, ""denominator"": 3304, ""numerator"": 3170, ""rate"": 0.9594430992736077}",P1

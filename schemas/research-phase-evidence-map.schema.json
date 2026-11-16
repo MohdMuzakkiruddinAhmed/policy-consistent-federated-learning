@@ -1,0 +1,555 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:research-phase-evidence-map",
+  "title": "Actual report-to-phase evidence map",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "kind",
+    "artifact_version",
+    "plan_digest",
+    "reports",
+    "phases",
+    "gates",
+    "research_scope",
+    "qualifications",
+    "teardown"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "kind": {
+      "const": "research-phase-evidence-map"
+    },
+    "artifact_version": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$"
+    },
+    "plan_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "reports": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/bound"
+      }
+    },
+    "phases": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9",
+        "P10",
+        "P11",
+        "P12"
+      ],
+      "properties": {
+        "P0": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "scope_ethics",
+            "no_human_collection",
+            "cost_controls"
+          ],
+          "properties": {
+            "scope_ethics": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "no_human_collection": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "cost_controls": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "P1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "requirements_invariants",
+            "literature_scope",
+            "independent_oracle_spec"
+          ],
+          "properties": {
+            "requirements_invariants": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "literature_scope": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "independent_oracle_spec": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "P2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "data_integrity",
+            "patient_disjointness",
+            "frozen_preprocessing_and_holdout"
+          ],
+          "properties": {
+            "data_integrity": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "patient_disjointness": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "frozen_preprocessing_and_holdout": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "P3": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "protocol_contracts",
+            "atomic_transactions",
+            "authenticated_architecture"
+          ],
+          "properties": {
+            "protocol_contracts": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "atomic_transactions": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "authenticated_architecture": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "P4": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actual_distribution",
+            "isolation_and_tls",
+            "independent_restart"
+          ],
+          "properties": {
+            "actual_distribution": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "isolation_and_tls": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "independent_restart": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "P5": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "baseline_equivalence",
+            "full_partition_training",
+            "frozen_training_protocol"
+          ],
+          "properties": {
+            "baseline_equivalence": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "full_partition_training": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "frozen_training_protocol": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "P6": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "native_opa_oracle",
+            "continuous_interval",
+            "atomic_policy_mutation"
+          ],
+          "properties": {
+            "native_opa_oracle": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "continuous_interval": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "atomic_policy_mutation": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "P7": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "guarded_publication",
+            "complete_audit",
+            "fail_closed_recovery"
+          ],
+          "properties": {
+            "guarded_publication": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "complete_audit": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "fail_closed_recovery": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "P8": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "locked_paired_matrix",
+            "accepted_pilots",
+            "automated_attempt_accounting"
+          ],
+          "properties": {
+            "locked_paired_matrix": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "accepted_pilots": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "automated_attempt_accounting": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "P9": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "repeated_primary_trials",
+            "statistical_analysis",
+            "traceable_claims"
+          ],
+          "properties": {
+            "repeated_primary_trials": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "statistical_analysis": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "traceable_claims": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "P10": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ablations",
+            "robustness_and_faults",
+            "tamper_validation"
+          ],
+          "properties": {
+            "ablations": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "robustness_and_faults": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "tamper_validation": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "P11": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "fresh_replication",
+            "frozen_analysis",
+            "limitations"
+          ],
+          "properties": {
+            "fresh_replication": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "frozen_analysis": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "limitations": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "P12": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "reproducibility",
+            "manuscript",
+            "teardown"
+          ],
+          "properties": {
+            "reproducibility": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "manuscript": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "teardown": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        }
+      }
+    },
+    "gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6"
+      ],
+      "properties": {
+        "G1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actual_tasks",
+            "actual_network_authentication",
+            "actual_iam_denials",
+            "restart_proof"
+          ],
+          "properties": {
+            "actual_tasks": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "actual_network_authentication": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "actual_iam_denials": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "restart_proof": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "G2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "oracle_parity",
+            "revoke_regrant",
+            "versioned_histories"
+          ],
+          "properties": {
+            "oracle_parity": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "revoke_regrant": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "versioned_histories": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "G3": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "guarded_commit",
+            "negative_races",
+            "membership_reconstruction"
+          ],
+          "properties": {
+            "guarded_commit": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "negative_races": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "membership_reconstruction": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "G4": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "all_four_methods",
+            "matched_configurations",
+            "repeated_matrix"
+          ],
+          "properties": {
+            "all_four_methods": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "matched_configurations": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "repeated_matrix": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "G5": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "final_outcomes_audited",
+            "protected_anchors",
+            "tamper_checker"
+          ],
+          "properties": {
+            "final_outcomes_audited": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "protected_anchors": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "tamper_checker": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        },
+        "G6": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "seed_intervals",
+            "ablation_robustness",
+            "replication",
+            "reproducibility_limitations"
+          ],
+          "properties": {
+            "seed_intervals": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "ablation_robustness": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "replication": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            },
+            "reproducibility_limitations": {
+              "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/leaf"
+            }
+          }
+        }
+      }
+    },
+    "research_scope": {
+      "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/bound"
+    },
+    "qualifications": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "abstract-only-related-work": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bounded-data-preparation-failure": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "teardown": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "inventories",
+        "readbacks",
+        "budget_ledger",
+        "authorization"
+      ],
+      "properties": {
+        "inventories": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/bound"
+          }
+        },
+        "readbacks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/bound"
+          }
+        },
+        "budget_ledger": {
+          "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/bound"
+        },
+        "authorization": {
+          "$ref": "urn:pcfl:0.1.0:research-phase-evidence-map#/$defs/bound"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "leaf": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "report",
+        "pointer",
+        "expected"
+      ],
+      "properties": {
+        "report": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pointer": {
+          "type": "string",
+          "pattern": "^/"
+        },
+        "expected": {
+          "type": "boolean"
+        }
+      }
+    },
+    "bound": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    }
+  }
+}

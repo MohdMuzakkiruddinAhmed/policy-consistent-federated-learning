@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:metric-test-record",
+  "title": "Independently verified final-test aggregate summary v0.1.0",
+  "type": "object",
+  "required": [
+    "successful",
+    "baseline_id",
+    "scenario_id",
+    "unique_presented_updates",
+    "oracle_invalid_presented",
+    "oracle_invalid_incorporations",
+    "oracle_valid_rejections",
+    "accepted_updates",
+    "final_decisions",
+    "published_models",
+    "audit_verified",
+    "model_reconstruction_verified",
+    "persistent_protocol_verified",
+    "committed_evaluation_response_verified",
+    "model_digests",
+    "test_metrics",
+    "evaluation_split",
+    "final_holdout_authorization_verified",
+    "accepted_plan_digest",
+    "holdout_authorization_digest",
+    "cell_id",
+    "is_confirmatory",
+    "assigned_tasks",
+    "acknowledged_tasks",
+    "final_update_decisions",
+    "final_operational_errors",
+    "indeterminate_tasks",
+    "audited_final_decisions",
+    "audit_complete_decisions"
+  ],
+  "properties": {
+    "successful": {
+      "const": true
+    },
+    "baseline_id": {
+      "enum": [
+        "B1",
+        "B2",
+        "B3",
+        "P1"
+      ]
+    },
+    "scenario_id": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/nonblank"
+    },
+    "unique_presented_updates": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/nonnegative"
+    },
+    "oracle_invalid_presented": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/nonnegative"
+    },
+    "oracle_invalid_incorporations": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/nonnegative"
+    },
+    "oracle_valid_rejections": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/nonnegative"
+    },
+    "accepted_updates": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/nonnegative"
+    },
+    "final_decisions": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/nonnegative"
+    },
+    "published_models": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/positive"
+    },
+    "audit_verified": {
+      "const": true
+    },
+    "model_reconstruction_verified": {
+      "const": true
+    },
+    "persistent_protocol_verified": {
+      "const": true
+    },
+    "committed_evaluation_response_verified": {
+      "const": true
+    },
+    "model_digests": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "urn:pcfl:0.1.0:common#/$defs/hash"
+      }
+    },
+    "test_metrics": {
+      "allOf": [
+        {
+          "$ref": "urn:pcfl:0.1.0:aggregate-metrics"
+        },
+        {
+          "properties": {
+            "threshold": {
+              "const": 0.5
+            }
+          }
+        }
+      ]
+    },
+    "evaluation_split": {
+      "const": "test"
+    },
+    "final_holdout_authorization_verified": {
+      "const": true
+    },
+    "accepted_plan_digest": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/hash"
+    },
+    "holdout_authorization_digest": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/hash"
+    },
+    "cell_id": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/id"
+    },
+    "is_confirmatory": {
+      "const": false
+    },
+    "assigned_tasks": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "acknowledged_tasks": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "final_update_decisions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "final_operational_errors": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "indeterminate_tasks": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "audited_final_decisions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "audit_complete_decisions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "runtime_observations_verified": {
+      "type": "boolean"
+    },
+    "revocation_response": {
+      "$ref": "urn:pcfl:0.1.0:metric-record#/$defs/revocation-response"
+    },
+    "runtime_stage_latency_ms": {
+      "type": "object",
+      "propertyNames": {
+        "enum": [
+          "run_initialization",
+          "issue_dispatch",
+          "ack_wait",
+          "ack_authorization",
+          "train_dispatch",
+          "policy_barrier",
+          "train_wait",
+          "receipt",
+          "publication",
+          "evaluation",
+          "run",
+          "failure"
+        ]
+      },
+      "additionalProperties": {
+        "type": "array",
+        "maxItems": 5000,
+        "items": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 604800000
+        }
+      }
+    },
+    "oracle_post_authorization_loss_invalid_publications": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Emitted only after the independent verifier checks externally supplied accepted-plan/authorization objects, exact final committed model, policies, audit and weighted reconstruction. Shape is not verification or attestation. Baseline invalid incorporations remain nonzero where observed; P1 safety still requires its separate semantic invariant. One case alone never establishes a confirmatory hypothesis verdict. Final decisions include update decisions plus durable operational errors; indeterminate assigned tasks are a separate count. These counts require independent semantic audit/assignment verification. Optional observer records bind a single local clock to actual policy/operation identities. Exact response is always null; semantic verification checks ordered interval bounds, lifecycle causality and denominators separately. Missing telemetry is not right censoring."
+}

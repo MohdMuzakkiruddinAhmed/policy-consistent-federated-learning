@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:aggregate-metrics",
+  "title": "Aggregate model evaluation metrics v0.1.0",
+  "type": "object",
+  "required": [
+    "count",
+    "positive_count",
+    "prevalence",
+    "auroc",
+    "auprc",
+    "precision",
+    "recall",
+    "f1",
+    "threshold",
+    "loss"
+  ],
+  "properties": {
+    "count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "positive_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "prevalence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "auroc": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "auprc": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "precision": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "recall": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "f1": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "threshold": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "loss": {
+      "type": "number",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Semantic checks enforce positive_count <= count, prevalence == positive_count/count, finite values, cohort binding and the study threshold. Null AUROC/AUPRC can represent undefined metrics; never coerce an undefined denominator to zero."
+}
+

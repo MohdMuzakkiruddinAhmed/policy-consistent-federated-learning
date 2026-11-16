@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:evaluation-request",
+  "title": "Isolated evaluation request v0.1.0",
+  "type": "object",
+  "required": [
+    "request_id",
+    "run_id",
+    "round_id",
+    "manifest_id",
+    "model_schema_hash",
+    "parameters_digest",
+    "artifact"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "round_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "manifest_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "model_schema_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "parameters_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "artifact": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/artifact"
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "The evaluator independently resolves the durable committed manifest and verifies exact immutable version, bytes, parameters and schema. No caller-supplied dataset path, records or labels are accepted."
+}
+

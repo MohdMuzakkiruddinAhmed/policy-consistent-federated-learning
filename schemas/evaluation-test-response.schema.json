@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:evaluation-test-response",
+  "title": "Authorized final-test aggregate response v0.1.0",
+  "type": "object",
+  "required": ["schema_version", "request_id", "run_id", "round_id", "manifest_id", "model_schema_hash", "parameters_digest", "model_sha256", "metadata_digest", "dataset_role", "final_test_evaluated", "manifest_verified", "metrics", "test_sha256", "test_sample_digest", "accepted_plan_digest", "holdout_authorization_digest", "holdout_authorization_id", "cell_id"],
+  "properties": {
+    "schema_version": {"const": "0.1.0"},
+    "request_id": {"$ref": "urn:pcfl:0.1.0:common#/$defs/id"},
+    "run_id": {"$ref": "urn:pcfl:0.1.0:common#/$defs/id"},
+    "round_id": {"$ref": "urn:pcfl:0.1.0:common#/$defs/id"},
+    "manifest_id": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+    "model_schema_hash": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+    "parameters_digest": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+    "model_sha256": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+    "metadata_digest": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+    "dataset_role": {"const": "test"},
+    "final_test_evaluated": {"const": true},
+    "manifest_verified": {"const": true},
+    "metrics": {
+      "allOf": [
+        {"$ref": "urn:pcfl:0.1.0:aggregate-metrics"},
+        {"properties": {"threshold": {"const": 0.5}}}
+      ]
+    },
+    "test_sha256": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+    "test_sample_digest": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+    "accepted_plan_digest": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+    "holdout_authorization_digest": {"$ref": "urn:pcfl:0.1.0:common#/$defs/hash"},
+    "holdout_authorization_id": {"$ref": "urn:pcfl:0.1.0:common#/$defs/id"},
+    "cell_id": {"$ref": "urn:pcfl:0.1.0:common#/$defs/id"}
+  },
+  "additionalProperties": false,
+  "$comment": "A distinct role-specific schema, not a relaxation of validation-only evaluation-response. Semantic verification additionally binds every request/model/dataset/plan/authorization/cell field to protected external expectations and the final committed durable model. Positive count/prevalence and native integer/finite checks remain executable obligations. No records, labels, predictions or arrays are exported."
+}

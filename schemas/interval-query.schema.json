@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:interval-query",
+  "title": "Inclusive lifecycle query v0.1.0",
+  "type": "object",
+  "required": [
+    "org_id",
+    "purpose",
+    "start_order",
+    "commit_order",
+    "actions"
+  ],
+  "properties": {
+    "org_id": {
+      "type": "string",
+      "enum": [
+        "org_01",
+        "org_02",
+        "org_03",
+        "org_04",
+        "org_05",
+        "org_06",
+        "org_07",
+        "org_08"
+      ]
+    },
+    "purpose": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "start_order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "commit_order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "train",
+          "submit_update",
+          "aggregate"
+        ]
+      },
+      "minItems": 3,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "client_timestamp": {
+      "type": "string",
+      "pattern": "\\S"
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Cross-field start_order <= commit_order and complete interval histories require semantic validation. Additional arbitrary diagnostics accepted by an evaluator are not part of this strict export profile."
+}
+

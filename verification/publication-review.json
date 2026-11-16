@@ -1,0 +1,75 @@
+{
+  "aggregate_reproduction": {
+    "analysis_files_verified": 13,
+    "comparison_mode": "windows-crlf-lf-canonical-text",
+    "figure_byte_identity_claimed": false,
+    "figures_generated": 7,
+    "newline_canonicalized_files": [
+      "analysis.json"
+    ],
+    "numeric_tolerance_used": false,
+    "python": "3.12.10",
+    "successful": true
+  },
+  "content_review": {
+    "credential_pattern_or_private_key_findings": 0,
+    "method": "pattern scan, file inventory, and independent source/documentation review; not a formal security audit",
+    "raw_clinical_records_or_model_arrays_found": false,
+    "synthetic_test_credentials_reviewed": true,
+    "terraform_state_found": false,
+    "third_party_license_notices_preserved": true
+  },
+  "focused_public_tests": {
+    "oracle_passed": 13,
+    "state_model_passed": 22,
+    "total_passed": 35
+  },
+  "github_distribution_changes": [
+    "MIT license and consistent reuse notices",
+    "repository and citation links, contribution guidance",
+    "byte-preserving Git attributes and expanded ignore rules",
+    "read-only CI for public integrity, tests, aggregate analysis and figures",
+    "separate publication review record and refreshed distribution hashes"
+  ],
+  "kind": "github-distribution-publication-review",
+  "license": "MIT",
+  "paper_update": {
+    "bundled_latex_source_matches_supplied_pdf_claimed": false,
+    "date": "2026-11-16",
+    "historical_validation_note": "verification/validation.json remains the original ZIP validation record and its paper hash describes the earlier PDF.",
+    "pages_including_references": 3,
+    "path": "paper/pcfl-poster.pdf",
+    "rendered_pages_visually_checked": 3,
+    "replaced_pdf_sha256": "0206217322e64e09b0e028c9546c0e7263d61ab6ea7bd1c2c58a3f4456aed08e",
+    "repository_hyperlink_verified": "https://github.com/MohdMuzakkiruddinAhmed/policy-consistent-federated-learning",
+    "sha256": "ec20428b52d8ca40403b0b5b39bb57bb83d9dab04f982e6e8ec3d77c372f7a6a",
+    "supplied_filename": "pcfl-final-with-github.pdf",
+    "supplied_pdf_bytes_preserved": true,
+    "timezone": "America/Chicago"
+  },
+  "preservation": {
+    "frozen_executable_bytes_changed": false,
+    "frozen_executable_files_verified": 270,
+    "original_validation_record_preserved": true,
+    "scientific_inputs_and_released_outputs_changed": false
+  },
+  "repository": "https://github.com/MohdMuzakkiruddinAhmed/policy-consistent-federated-learning",
+  "review_date": "2026-11-16",
+  "review_timezone": "America/Chicago",
+  "scope": {
+    "cloud_deployment_or_paid_services_used": false,
+    "fresh_training_performed": false,
+    "full_historical_test_suite_run": false,
+    "literature_or_scientific_conclusions_independently_validated": false,
+    "private_data_or_model_replay_performed": false
+  },
+  "source_archive": {
+    "archive_files": 364,
+    "name": "pcfl-research-artifact.zip",
+    "original_checksum_entries_verified": 363,
+    "original_manifest_sha256": "9e051b100ab488843c8e4366208bc2cbbb61aab6f1716b2205fd87c756b526fe",
+    "original_payload_files_verified": 362,
+    "sha256": "4d462aac7d02d1f5596fa2272130106107ebbf613737d78c7c717a0fc5dab565",
+    "zip_crc_check": "passed"
+  }
+}

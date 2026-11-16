@@ -1,0 +1,41 @@
+name: Research checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-artifact:
+    name: Verify public artifact
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      PYTHONPATH: src
+      PYTHONDONTWRITEBYTECODE: "1"
+      MPLBACKEND: Agg
+    steps:
+      - name: Check out the artifact
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Set up Python 3.12.10
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: "3.12.10"
+      - name: Verify preserved source and scientific inputs
+        run: python -B reproduce.py --verify-only
+      - name: Check all distribution checksums
+        run: sha256sum --check CHECKSUMS.sha256
+      - name: Run focused public tests
+        run: |
+          python -B -m unittest discover -s tests -p test_oracle.py
+          python -B -m unittest discover -s tests -p test_state_model.py
+      - name: Install hash-locked analysis dependencies
+        run: python -m pip install --require-hashes -r requirements-analysis.lock
+      - name: Reproduce statistics and figures
+        run: python -B reproduce.py --figures

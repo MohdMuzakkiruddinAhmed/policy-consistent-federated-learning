@@ -1,0 +1,4 @@
+# Base oracle/data dependency set: empty (Python standard library only).
+# Tested interpreter: CPython 3.12.10; optional packaging backend is pinned in pyproject.toml.
+# Full learning tests/runtime: requirements-runtime.lock (Windows),
+# containers/requirements-linux.lock (Linux). OPA integration remains pending.

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:audit-event",
+  "title": "Hash-linked final outcome v0.1.0",
+  "type": "object",
+  "required": [
+    "sequence",
+    "prev_hash",
+    "payload",
+    "event_hash"
+  ],
+  "properties": {
+    "sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "prev_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "payload": {
+      "$ref": "urn:pcfl:0.1.0:update-decision"
+    },
+    "event_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Integrity requires canonical body hashing, consecutive sequence, unique update outcomes and a separately trusted count/head anchor. A valid shape or colocated head is insufficient."
+}
+

@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "Please cite this artifact and its accompanying poster manuscript when using the code or aggregate results."
+type: software
+title: "Policy-Consistent Federated Learning: Dynamic Governance and Auditable Aggregation"
+version: "poster-artifact-v1"
+repository-code: "https://github.com/MohdMuzakkiruddinAhmed/policy-consistent-federated-learning"
+license: "MIT"
+authors:
+  - family-names: "Mohammed"
+    given-names: "Muzakkiruddin Ahmed"
+    email: "mmohammed6@ualr.edu"
+    affiliation: "Center for Advanced Research in Entity Resolution and Information Quality (ERIQ), University of Arkansas at Little Rock"
+  - family-names: "Shaik"
+    given-names: "Sana Afsheen"
+    email: "shaiks@bentonvillek12.org"
+    affiliation: "Bentonville West High School"
+  - family-names: "Chapman"
+    given-names: "Alyson Michele"
+    email: "chapmanal@bentonvillek12.org"
+    affiliation: "Bentonville West High School"
+  - family-names: "Elfikky"
+    given-names: "Abdelrahman"
+    email: "aelfikky1@ualr.edu"
+    affiliation: "Center for Advanced Research in Entity Resolution and Information Quality (ERIQ), University of Arkansas at Little Rock"
+  - family-names: "Talburt"
+    given-names: "John"
+    email: "Jrtalburt@ualr.edu"
+    affiliation: "Center for Advanced Research in Entity Resolution and Information Quality (ERIQ), University of Arkansas at Little Rock"
+abstract: "Paper-oriented research artifact for inclusive authorization histories, guarded model publication and auditable federated aggregation. Includes preserved research code, aggregate experiment results, scientific figures and a public aggregate reproduction helper."
+keywords:
+  - federated learning
+  - dynamic authorization
+  - data governance
+  - auditable aggregation

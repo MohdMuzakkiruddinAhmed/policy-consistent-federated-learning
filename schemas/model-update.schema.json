@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:model-update",
+  "title": "Retained update metadata v0.1.0",
+  "type": "object",
+  "required": [
+    "update_id",
+    "task_id",
+    "org_id",
+    "round_id",
+    "purpose",
+    "start_order",
+    "received_order",
+    "sample_count",
+    "weights_digest",
+    "model_schema_hash"
+  ],
+  "properties": {
+    "update_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "task_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "org_id": {
+      "type": "string",
+      "enum": [
+        "org_01",
+        "org_02",
+        "org_03",
+        "org_04",
+        "org_05",
+        "org_06",
+        "org_07",
+        "org_08"
+      ]
+    },
+    "node_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "round_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "purpose": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "start_order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "received_order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "sample_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "weights_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "model_schema_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "artifact": {
+      "$ref": "urn:pcfl:0.1.0:common#/$defs/artifact"
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Metadata only; arrays, row-level training data, labels and bearer nonces are excluded. Parameter shape/bytes, sample budget, task equality and receipt ordering are semantic checks."
+}
+

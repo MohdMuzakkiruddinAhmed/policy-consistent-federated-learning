@@ -1,0 +1,42 @@
+{
+  "confidence_interval": null,
+  "confirmatory": false,
+  "effect": null,
+  "independent_seed_count": 1,
+  "normalized_summary_bindings": [
+    {
+      "confidence_interval": null,
+      "confirmatory": false,
+      "effect": null,
+      "evaluation_split": "validation",
+      "final_test_accessed": false,
+      "independent_seed_count": 1,
+      "limitations": [
+        "One fixed seed296; OFAT/control reuse is descriptive, with no independent replication, CI or H4 inference",
+        "Eight physical actors and exact selected subsets are exploratory placement evidence, not primary G1 acceptance",
+        "Configured client delay and reported clock offset are application interventions, not network latency or authority-clock changes",
+        "Timing-response observer normalization is not claimed here; unchanged traces remain retained",
+        "Costs require the separately bound attributable-cost evidence; missing cost is not zero",
+        "Failed, unverified, unattempted and repeated cases remain explicit and cannot supply successful clinical outcomes"
+      ],
+      "normalization_complete": true,
+      "registry_digest": "04397f8e06a4594365b7b537442cfa8a16b02064dd84bc7f4fca9b1cd09f781c",
+      "report_alias": "separate-normalized21-exploration",
+      "report_sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a",
+      "successful": true
+    }
+  ],
+  "references": [
+    {
+      "alias": "separate-normalized21-exploration",
+      "assessment": "retained-bound-evidence; not an independently inferred phase verdict",
+      "category": "exploratory",
+      "kind": "independent-exploratory-robustness-summary",
+      "path": "results/aws/campaign-20261115T181929-f48f06/host-logs/sa1/native-summary-v1.json",
+      "reported_successful": true,
+      "sha256": "5132447c18dee16e3fb3776c26a21e5a9bb5ae64c160b20bbc5961305548150a"
+    }
+  ],
+  "status": "normalized-clinical-descriptive-only",
+  "verified_clinical_attempts": 21
+}

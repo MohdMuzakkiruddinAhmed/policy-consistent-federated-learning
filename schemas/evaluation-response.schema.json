@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pcfl:0.1.0:evaluation-response",
+  "title": "Validation-only aggregate response v0.1.0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "request_id",
+    "run_id",
+    "round_id",
+    "manifest_id",
+    "model_schema_hash",
+    "parameters_digest",
+    "model_sha256",
+    "metadata_digest",
+    "validation_sha256",
+    "validation_sample_digest",
+    "dataset_role",
+    "final_test_evaluated",
+    "manifest_verified",
+    "metrics"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "request_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "round_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "manifest_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "model_schema_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "parameters_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "model_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "metadata_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "validation_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "validation_sample_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "dataset_role": {
+      "const": "validation"
+    },
+    "final_test_evaluated": {
+      "const": false
+    },
+    "manifest_verified": {
+      "type": "boolean"
+    },
+    "metrics": {
+      "$ref": "urn:pcfl:0.1.0:aggregate-metrics"
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Current service is validation-only. Persistent successful runtime requires manifest_verified=true and exact request/deployment bindings. This schema does not claim or authorize final-test evaluation."
+}
+

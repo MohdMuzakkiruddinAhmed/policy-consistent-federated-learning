@@ -1,0 +1,9 @@
+baseline_id,cell_id,distribution,fresh_deployment_metadata_verified,scenario_id
+B3,replication-a9484cb1285c7720dde00590,iid,True,S2
+P1,replication-e0aa8c9469db40e4a688c025,iid,True,S2
+B3,replication-3d17a5c6ddd5923da3db981a,iid,True,S3
+P1,replication-84073c741a348a63f031562c,iid,True,S3
+B3,replication-088ebd618c5d852ee772aa30,non_iid,True,S2
+P1,replication-9ac6ee65bde329a47256ab8a,non_iid,True,S2
+B3,replication-0901c6ba0cee3381638f9ea1,non_iid,True,S3
+P1,replication-9be60a31d08f295dd7bd31b2,non_iid,True,S3
